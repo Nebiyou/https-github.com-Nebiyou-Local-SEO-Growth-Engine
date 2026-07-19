@@ -84,7 +84,7 @@ Every one of the 23 concepts gets:
    concept (e.g., watch a decimal shift places when multiplied by 10; watch unit cubes
    fill a prism; watch a fraction bar split for unlike-denominator addition; a spinning
    tree diagram building a sample space). Play/pause/replay controls.
-3. **5 multiple-choice questions** — modeled on real state-test formats (4 options,
+3. **10 multiple-choice questions** — modeled on real state-test formats (4 options,
    with distractors based on common mistakes). Instant feedback with explanations.
 4. **5 open-ended questions** — numeric/short-response, like state "equation entry" /
    constructed-response items.
@@ -93,7 +93,7 @@ Every one of the 23 concepts gets:
 6. **Answer key** — every answer with a worked solution, in a collapsible section plus
    a master answer key at the end.
 
-**Totals: 115 multiple-choice + 115 open-ended + 23 challenge problems = 253 questions,
+**Totals: 230 multiple-choice + 115 open-ended + 23 challenge problems = 368 questions,
 all with worked answers.**
 
 ## Implementation plan (Phase 2)
@@ -119,6 +119,5 @@ all with worked answers.**
 
 ---
 
-**Status: awaiting approval.** On approval, Phase 2 begins with no changes to scope
-unless requested. Anything you'd like added, cut, or re-weighted (e.g., more challenge
-problems, a specific state's emphasis, a printable worksheet mode) — say the word.
+**Status: approved** (with amendment: 10 multiple-choice questions per concept instead
+of 5). Phase 2 in progress.

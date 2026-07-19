@@ -1,0 +1,328 @@
+{
+  "unit": 1,
+  "title": "Place Value & Number Sense",
+  "concepts": [
+    {
+      "id": "c1",
+      "title": "Place Value to Thousandths & Powers of 10",
+      "standards": ["5.NBT.A.1", "5.NBT.A.2"],
+      "states": "Tested in every state",
+      "know": [
+        "Each place in a number is worth 10 times the place to its right, and {{1/10}} of the place to its left.",
+        "Multiplying by 10 shifts every digit one place to the left (the number gets 10 times bigger).",
+        "Dividing by 10 shifts every digit one place to the right (each digit is worth {{1/10}} as much).",
+        "A power of 10 like 10<sup>3</sup> means 10 × 10 × 10 = 1,000 — the exponent tells you how many 10s are multiplied.",
+        "When you multiply or divide by 10<sup>n</sup>, the digits shift n places."
+      ],
+      "mc": [
+        {
+          "q": "In the number 55.5, how does the value of the 5 in the tens place compare to the value of the 5 in the ones place?",
+          "choices": ["It is {{1/10}} as great", "It is 5 times as great", "It is 10 times as great", "It is 100 times as great"],
+          "answer": 2,
+          "explain": "The tens-place 5 is worth 50 and the ones-place 5 is worth 5, and 50 = 10 × 5. It is not 100 times as great — that compares places two apart, not neighbors."
+        },
+        {
+          "q": "What is 3.7 × 10?",
+          "choices": ["37", "3.70", "0.37", "370"],
+          "answer": 0,
+          "explain": "Multiplying by 10 shifts each digit one place left: 3.7 becomes 37. Writing 3.70 just adds a zero without changing the value, and 0.37 shifts the wrong direction."
+        },
+        {
+          "q": "What is the value of 10<sup>3</sup>?",
+          "choices": ["100", "1,000", "30", "10,000"],
+          "answer": 1,
+          "explain": "10<sup>3</sup> means 10 × 10 × 10 = 1,000. It does not mean 10 × 3 = 30, and 10,000 would be 10<sup>4</sup>."
+        },
+        {
+          "q": "What is 45.6 ÷ 100?",
+          "choices": ["4.56", "4,560", "0.0456", "0.456"],
+          "answer": 3,
+          "explain": "Dividing by 100 shifts the digits two places right: 45.6 → 4.56 → 0.456. Choosing 4.56 only shifts one place, and 4,560 multiplies instead of divides."
+        },
+        {
+          "q": "In 0.777, the 7 in the tenths place is worth how many times the 7 in the hundredths place?",
+          "choices": ["{{1/10}} as much", "10 times as much", "100 times as much", "7 times as much"],
+          "answer": 1,
+          "explain": "The tenths 7 is worth 0.7 and the hundredths 7 is worth 0.07, and 0.7 = 10 × 0.07. It is not {{1/10}} as much — that describes moving right, not left."
+        },
+        {
+          "q": "What is 0.83 × 10<sup>2</sup>?",
+          "choices": ["83", "8.3", "830", "0.0083"],
+          "answer": 0,
+          "explain": "10<sup>2</sup> = 100, so shift the digits two places left: 0.83 becomes 83. Picking 8.3 shifts only one place; 0.0083 divides instead of multiplies."
+        },
+        {
+          "q": "A juice company packs 6.04 liters into each crate. How many liters are in 1,000 crates? (Find 6.04 × 1,000.)",
+          "choices": ["604", "6.04000", "6,040", "60.4"],
+          "answer": 2,
+          "explain": "Multiplying by 1,000 shifts the digits three places left: 6.04 → 6,040. Just tacking on zeros to get 6.04000 does not change the value at all."
+        },
+        {
+          "q": "Which expression is equal to 700?",
+          "choices": ["7 × 10<sup>3</sup>", "0.7 × 10<sup>2</sup>", "70 × 10<sup>2</sup>", "7 × 10<sup>2</sup>"],
+          "answer": 3,
+          "explain": "7 × 10<sup>2</sup> = 7 × 100 = 700. The exponent counts the 10s, so 7 × 10<sup>3</sup> = 7,000 — too big by one shift."
+        },
+        {
+          "q": "Jaden divided 3,500 by a power of 10 and got 3.5. What power of 10 did he divide by?",
+          "choices": ["10<sup>3</sup>", "10<sup>2</sup>", "10<sup>4</sup>", "10<sup>1</sup>"],
+          "answer": 0,
+          "explain": "The digits shifted three places right (3,500 → 350 → 35 → 3.5), so he divided by 10<sup>3</sup> = 1,000. Dividing by 10<sup>2</sup> would give 35, not 3.5."
+        },
+        {
+          "q": "In which number does the digit 4 have a value that is 100 times the value of the 4 in 0.048?",
+          "choices": ["2.4", "34.5", "542", "0.24"],
+          "answer": 1,
+          "explain": "In 0.048 the 4 is worth 0.04, and 100 × 0.04 = 4, so we need a 4 in the ones place: 34.5. In 542 the 4 is worth 40, which is 1,000 times as much."
+        }
+      ],
+      "open": [
+        {
+          "q": "Write 10 × 10 × 10 × 10 as a power of 10.",
+          "answer": "10<sup>4</sup>",
+          "solution": "Count the number of 10s being multiplied: there are four. The exponent tells how many 10s, so 10 × 10 × 10 × 10 = 10<sup>4</sup>, which equals 10,000."
+        },
+        {
+          "q": "Compute: 7.03 × 100.",
+          "answer": "703",
+          "solution": "Multiplying by 100 shifts every digit two places to the left. 7.03 → 70.3 → 703. So 7.03 × 100 = 703."
+        },
+        {
+          "q": "Compute: 96 ÷ 10<sup>3</sup>.",
+          "answer": "0.096",
+          "solution": "10<sup>3</sup> = 1,000, so shift the digits three places to the right. 96 → 9.6 → 0.96 → 0.096. So 96 ÷ 10<sup>3</sup> = 0.096."
+        },
+        {
+          "q": "A dime is worth {{1/10}} of a dollar. Amara saved 1,000 dimes in a jar. How many dollars does she have?",
+          "answer": "$100",
+          "solution": "Each dime is worth $0.10. Multiply: 1,000 × 0.10 shifts the digits of 0.10 three places left, giving 100. Amara has $100."
+        },
+        {
+          "q": "The value of the 6 in 63,000 is how many times the value of the 6 in 630?",
+          "answer": "100 times",
+          "solution": "In 63,000 the 6 is worth 60,000. In 630 the 6 is worth 600. Divide: 60,000 ÷ 600 = 100. The 6 moved two places left, and each place is worth 10 times more, so 10 × 10 = 100 times."
+        }
+      ],
+      "challenge": {
+        "q": "A number machine multiplies whatever you put in by 10, then by 10 again, then by 10 a third time, and finally divides the result by 100. Zoe puts in a mystery number and 4.5 comes out. What number did Zoe put in?",
+        "answer": "0.45",
+        "solution": "Multiplying by 10 three times is the same as multiplying by 10<sup>3</sup> = 1,000. Then dividing by 100 undoes two of those shifts, so overall the machine just multiplies by 1,000 ÷ 100 = 10. If the output is 4.5, the input must be 4.5 ÷ 10 = 0.45. Check: 0.45 × 1,000 = 450, and 450 ÷ 100 = 4.5. ✓"
+      }
+    },
+    {
+      "id": "c2",
+      "title": "Reading, Writing, Comparing & Rounding Decimals",
+      "standards": ["5.NBT.A.3", "5.NBT.A.4"],
+      "states": "Tested in every state",
+      "know": [
+        "Read a decimal by saying the whole part, \"and\" for the decimal point, then the decimal part with its last place name: 8.309 is \"eight and three hundred nine thousandths\".",
+        "Expanded form shows each digit times its place value, like 40.73 = 4×10 + 7×{{1/10}} + 3×{{1/100}}.",
+        "To compare decimals, line up the decimal points and compare place by place from the left. You can add zeros on the end: 0.9 = 0.90.",
+        "A longer decimal is NOT automatically bigger — 0.4 is greater than 0.35.",
+        "To round, find the rounding place, look at the digit just to its right: 5 or more rounds up, 4 or less keeps the digit the same."
+      ],
+      "mc": [
+        {
+          "q": "Which numeral means \"six and three tenths\"?",
+          "choices": ["6.03", "6.3", "63", "0.63"],
+          "answer": 1,
+          "explain": "\"Six and three tenths\" is 6 wholes plus 3 in the tenths place: 6.3. Writing 6.03 puts the 3 in the hundredths place instead."
+        },
+        {
+          "q": "Which number is the greatest?",
+          "choices": ["0.09", "0.089", "0.055", "0.1"],
+          "answer": 3,
+          "explain": "Compare tenths first: 0.1 has 1 tenth while the others have 0 tenths, so 0.1 is greatest. More digits does not mean bigger — 0.089 is less than 0.1."
+        },
+        {
+          "q": "Round 3.86 to the nearest tenth.",
+          "choices": ["3.9", "3.8", "4", "3.86"],
+          "answer": 0,
+          "explain": "The tenths digit is 8; the digit to its right is 6, which is 5 or more, so round up to 3.9. Choosing 3.8 forgets to round up; 4 rounds to the nearest whole instead."
+        },
+        {
+          "q": "Which is the expanded form of 40.73?",
+          "choices": ["4×10 + 7×1 + 3×{{1/10}}", "4×10 + 7×{{1/100}} + 3×{{1/1000}}", "4×10 + 7×{{1/10}} + 3×{{1/100}}", "4×1 + 7×{{1/10}} + 3×{{1/100}}"],
+          "answer": 2,
+          "explain": "The 4 is 4 tens, the 7 is 7 tenths, and the 3 is 3 hundredths: 40 + 0.7 + 0.03 = 40.73. The first choice equals 47.3 — a place-value slip."
+        },
+        {
+          "q": "Which numeral means \"twelve and forty-six thousandths\"?",
+          "choices": ["12.46", "12.0046", "12,046", "12.046"],
+          "answer": 3,
+          "explain": "Forty-six thousandths must end in the thousandths place, so write 046 after the point: 12.046. Writing 12.46 says forty-six hundredths instead."
+        },
+        {
+          "q": "Which list shows 2.5, 2.35, 2.53, and 2.05 in order from least to greatest?",
+          "choices": ["2.5, 2.05, 2.35, 2.53", "2.05, 2.35, 2.5, 2.53", "2.05, 2.5, 2.35, 2.53", "2.53, 2.5, 2.35, 2.05"],
+          "answer": 1,
+          "explain": "Write them as 2.50, 2.35, 2.53, 2.05 and compare: 2.05 < 2.35 < 2.50 < 2.53. Remember 2.5 = 2.50, which is more than 2.35, not less."
+        },
+        {
+          "q": "A puppy weighs 82.462 pounds... just kidding — a baby hippo does! Round 82.462 to the nearest tenth.",
+          "choices": ["82.5", "82.4", "82.46", "82"],
+          "answer": 0,
+          "explain": "The tenths digit is 4; the hundredths digit is 6, which is 5 or more, so round up to 82.5. Choosing 82.46 rounds to the hundredth, not the tenth."
+        },
+        {
+          "q": "Which number rounds to 6.4 when rounded to the nearest tenth?",
+          "choices": ["6.45", "6.349", "6.44", "6.05"],
+          "answer": 2,
+          "explain": "6.44 has a 4 in the hundredths place, so it rounds down to 6.4. But 6.45 rounds up to 6.5, and 6.349 rounds to 6.3."
+        },
+        {
+          "q": "Which comparison is true?",
+          "choices": ["0.708 > 0.78", "5.2 < 5.19", "0.5 > 0.50", "0.708 < 0.78"],
+          "answer": 3,
+          "explain": "Write 0.78 as 0.780; comparing hundredths, 0 < 8, so 0.708 < 0.78. Don't compare digit counts — 708 looks bigger than 78, but place value says otherwise, and 0.5 = 0.50 exactly."
+        },
+        {
+          "q": "Nora's number, rounded to the nearest whole number, is 15. Rounded to the nearest tenth, it is 14.6. Which could be Nora's number?",
+          "choices": ["14.64", "14.66", "14.06", "15.46"],
+          "answer": 0,
+          "explain": "14.64 rounds to 14.6 (the 4 hundredths round down) and to 15 (the 6 tenths round up) — both clues fit. 14.66 fails because it rounds to 14.7."
+        }
+      ],
+      "open": [
+        {
+          "q": "Write 8.309 in words.",
+          "answer": "Eight and three hundred nine thousandths",
+          "solution": "The whole part is 8, so say \"eight and\". The decimal part 309 ends in the thousandths place, so read it as \"three hundred nine thousandths\". Together: eight and three hundred nine thousandths."
+        },
+        {
+          "q": "Write 507.26 in expanded form.",
+          "answer": "5×100 + 7×1 + 2×{{1/10}} + 6×{{1/100}}",
+          "solution": "The 5 is 5 hundreds, the 0 tens adds nothing, the 7 is 7 ones, the 2 is 2 tenths, and the 6 is 6 hundredths. So 507.26 = 5×100 + 7×1 + 2×{{1/10}} + 6×{{1/100}}."
+        },
+        {
+          "q": "Write >, =, or < to make this true: 0.86 ___ 0.9",
+          "answer": "<",
+          "solution": "Write 0.9 as 0.90 so both have hundredths. Compare tenths: 8 < 9, so 0.86 < 0.90. The answer is <."
+        },
+        {
+          "q": "Four friends ran a 100-meter race. Ava finished in 14.32 seconds, Ben in 14.4 seconds, Cara in 14.23 seconds, and Dev in 14.3 seconds. Who won the race?",
+          "answer": "Cara",
+          "solution": "The winner has the least time. Write the times with hundredths: 14.32, 14.40, 14.23, 14.30. Comparing tenths then hundredths, 14.23 is the smallest, so Cara won."
+        },
+        {
+          "q": "Round 249.958 to the nearest tenth.",
+          "answer": "250.0",
+          "solution": "The tenths digit is 9; the hundredths digit is 5, so round up. Rounding 249.9 up by one tenth gives 250.0, because the 9 tenths becomes 10 tenths and regroups into the ones place."
+        }
+      ],
+      "challenge": {
+        "q": "I am a decimal in the form 0.___ ___ ___ (three decimal places). Rounded to the nearest hundredth, I am 0.35. My thousandths digit is odd, and the sum of my three decimal digits is 12. What number am I?",
+        "answer": "0.345",
+        "solution": "To round to 0.35, the number must be from 0.345 up to 0.354. So it is 0.34_ (thousandths 5–9) or 0.35_ (thousandths 0–4). Try 0.34_: the digits 3 + 4 + c = 12 gives c = 5, which is odd and in range — that works! Try 0.35_: 3 + 5 + c = 12 gives c = 4, which is even, so it fails. The number is 0.345."
+      }
+    },
+    {
+      "id": "c3",
+      "title": "Prime, Composite & Prime Factorization",
+      "standards": ["VA 5.NS.2"],
+      "states": "Virginia — great review for everyone",
+      "know": [
+        "A prime number has exactly two factors: 1 and itself. Examples: 2, 3, 5, 7, 11.",
+        "A composite number has more than two factors. Example: 15 has factors 1, 3, 5, 15.",
+        "The number 1 is neither prime nor composite — it has only one factor.",
+        "2 is the only even prime number; every other even number is composite.",
+        "Prime factorization breaks a composite number into a product of primes, and a factor tree helps you find it: keep splitting until every branch ends in a prime.",
+        "Even + even = even, odd + odd = even, and even + odd = odd."
+      ],
+      "mc": [
+        {
+          "q": "Which number is prime?",
+          "choices": ["11", "9", "15", "21"],
+          "answer": 0,
+          "explain": "The only factors of 11 are 1 and 11, so it is prime. Being odd is not enough: 9 = 3 × 3, 15 = 3 × 5, and 21 = 3 × 7 are all composite."
+        },
+        {
+          "q": "Which number is composite?",
+          "choices": ["2", "13", "27", "31"],
+          "answer": 2,
+          "explain": "27 = 3 × 9, so it has factors besides 1 and itself — composite. The numbers 2, 13, and 31 each have exactly two factors, so they are prime."
+        },
+        {
+          "q": "The number 1 is:",
+          "choices": ["prime", "composite", "both prime and composite", "neither prime nor composite"],
+          "answer": 3,
+          "explain": "A prime needs exactly two different factors, but 1 has only one factor (itself). So 1 is neither prime nor composite."
+        },
+        {
+          "q": "Which is the prime factorization of 36?",
+          "choices": ["4 × 9", "2 × 2 × 3 × 3", "2 × 18", "6 × 6"],
+          "answer": 1,
+          "explain": "2 × 2 × 3 × 3 = 36 and every factor is prime. The others equal 36 too, but 4, 9, 18, and 6 are composite, so they are not prime factorizations."
+        },
+        {
+          "q": "Which is the only even prime number?",
+          "choices": ["2", "4", "0", "6"],
+          "answer": 0,
+          "explain": "2 has exactly two factors, 1 and 2, so it is prime. Every other even number can be divided by 2, so it has extra factors and is composite."
+        },
+        {
+          "q": "Tia starts a factor tree for 45 by splitting it into 9 × 5. What is the complete prime factorization of 45?",
+          "choices": ["9 × 5", "5 × 5 × 3", "3 × 15", "3 × 3 × 5"],
+          "answer": 3,
+          "explain": "The 9 is composite, so keep splitting: 9 = 3 × 3. That gives 45 = 3 × 3 × 5, all primes. Stopping at 9 × 5 leaves a composite factor in the tree."
+        },
+        {
+          "q": "The sum of two odd numbers is always:",
+          "choices": ["odd", "even", "prime", "composite"],
+          "answer": 1,
+          "explain": "Try examples: 3 + 5 = 8 and 7 + 9 = 16 — always even. Each odd number is an even number plus 1, and the two extra 1s pair up to make the sum even."
+        },
+        {
+          "q": "Which number between 90 and 100 is prime?",
+          "choices": ["91", "93", "97", "99"],
+          "answer": 2,
+          "explain": "97 is not divisible by 2, 3, 5, or 7, so it is prime. The trap is 91: it looks prime but 91 = 7 × 13, and 93 = 3 × 31, 99 = 9 × 11."
+        },
+        {
+          "q": "Amir claims that every odd number greater than 1 is prime. Which number proves he is wrong?",
+          "choices": ["23", "51", "41", "53"],
+          "answer": 1,
+          "explain": "51 is odd but composite: 51 = 3 × 17, so it breaks Amir's rule. The numbers 23, 41, and 53 are all prime, so they don't disprove him."
+        },
+        {
+          "q": "Which is the prime factorization of 84?",
+          "choices": ["2 × 3 × 14", "4 × 21", "2 × 42", "2 × 2 × 3 × 7"],
+          "answer": 3,
+          "explain": "84 = 2 × 42 = 2 × 2 × 21 = 2 × 2 × 3 × 7, and all of those factors are prime. The other choices equal 84 but still contain composite factors like 14, 4, 21, or 42."
+        }
+      ],
+      "open": [
+        {
+          "q": "List all the prime numbers between 20 and 35.",
+          "answer": "23, 29, 31",
+          "solution": "Check each number from 21 to 34. Cross out evens and multiples of 3 or 5: 21 = 3×7, 25 = 5×5, 27 = 3×9, 33 = 3×11. Only 23, 29, and 31 have no factors besides 1 and themselves."
+        },
+        {
+          "q": "Use a factor tree to find the prime factorization of 60.",
+          "answer": "2 × 2 × 3 × 5",
+          "solution": "Split 60 = 6 × 10. Then split 6 = 2 × 3 and 10 = 2 × 5. All branches now end in primes, so 60 = 2 × 2 × 3 × 5. Check: 2 × 2 = 4, 4 × 3 = 12, 12 × 5 = 60. ✓"
+        },
+        {
+          "q": "Is 87 prime or composite? Explain how you know.",
+          "answer": "Composite (87 = 3 × 29)",
+          "solution": "Test small primes. 87 is odd, so 2 doesn't work. The digits 8 + 7 = 15, which is divisible by 3, so 87 is divisible by 3: 87 = 3 × 29. Since it has more than two factors, 87 is composite."
+        },
+        {
+          "q": "Mr. Ortiz wants to arrange 29 desks into equal rows, with more than one row and more than one desk in each row. Can he do it? Explain.",
+          "answer": "No — 29 is prime",
+          "solution": "Equal rows means the number of rows times desks per row equals 29. Since 29 is prime, its only factors are 1 and 29, so the only arrangements are 1 row of 29 or 29 rows of 1. Neither fits the rule, so he cannot do it."
+        },
+        {
+          "q": "Jo adds an even number to an odd number, then multiplies the sum by 2. Is her final result even or odd?",
+          "answer": "Even",
+          "solution": "An even plus an odd is always odd (for example, 4 + 3 = 7). Multiplying any whole number by 2 always gives an even number (7 × 2 = 14). So the final result is always even."
+        }
+      ],
+      "challenge": {
+        "q": "Zara's locker number is between 50 and 100. Its prime factorization is exactly three <b>different</b> prime numbers multiplied together, each used only once. One of those primes is 5. What is Zara's locker number?",
+        "answer": "70",
+        "solution": "The number is 5 × p × q for two different primes p and q (neither equal to 5). So p × q must be between 50 ÷ 5 = 10 and 100 ÷ 5 = 20. Try prime pairs: 2 × 3 = 6 (too small, gives 30), 2 × 7 = 14 (gives 5 × 14 = 70 ✓), 2 × 11 = 22 (too big), 3 × 7 = 21 (too big). Only 70 works: 70 = 2 × 5 × 7."
+      }
+    }
+  ]
+}

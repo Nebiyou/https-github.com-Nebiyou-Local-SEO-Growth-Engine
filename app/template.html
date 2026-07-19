@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grade 5 Math Mastery — Every State, One Page</title>
+<style>
+:root{
+  --bg:#f6f8fc; --panel:#ffffff; --ink:#1c2333; --muted:#5b6478;
+  --brand:#4f46e5; --brand2:#0ea5e9; --good:#16a34a; --bad:#dc2626;
+  --warn:#d97706; --chip:#eef2ff; --line:#e5e9f2; --gold:#f59e0b;
+  --radius:14px; --shadow:0 2px 10px rgba(28,35,51,.07);
+}
+[data-theme="dark"]{
+  --bg:#0f1420; --panel:#1a2130; --ink:#e8ecf6; --muted:#9aa5bd;
+  --chip:#252e44; --line:#2b3550; --shadow:0 2px 10px rgba(0,0,0,.35);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:'Segoe UI',system-ui,-apple-system,Verdana,sans-serif;background:var(--bg);color:var(--ink);font-size:16px;line-height:1.55}
+a{color:var(--brand)}
+.layout{display:flex;min-height:100vh}
+/* ---------- sidebar ---------- */
+nav{width:290px;flex-shrink:0;background:var(--panel);border-right:1px solid var(--line);padding:14px;position:sticky;top:0;height:100vh;overflow-y:auto}
+nav h1{font-size:19px;margin:6px 4px 2px;background:linear-gradient(90deg,var(--brand),var(--brand2));-webkit-background-clip:text;background-clip:text;color:transparent}
+nav .sub{font-size:12px;color:var(--muted);margin:0 4px 10px}
+.unitblock{margin-bottom:6px}
+.unithead{font-weight:700;font-size:13.5px;padding:7px 8px;border-radius:8px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;user-select:none}
+.unithead:hover{background:var(--chip)}
+.unithead .count{font-size:11px;color:var(--muted);font-weight:400}
+.navlink{display:flex;align-items:center;gap:7px;padding:6px 8px 6px 16px;border-radius:8px;font-size:13.5px;color:var(--ink);text-decoration:none;cursor:pointer}
+.navlink:hover{background:var(--chip)}
+.navlink.active{background:var(--chip);font-weight:600}
+.navlink .tick{width:17px;height:17px;border-radius:50%;border:2px solid var(--line);flex-shrink:0;display:inline-flex;align-items:center;justify-content:center;font-size:11px;color:#fff}
+.navlink .tick.done{background:var(--good);border-color:var(--good)}
+.navlink .tick.part{border-color:var(--gold)}
+.navtools{margin:10px 0;padding:10px 8px;border:1px solid var(--line);border-radius:10px}
+.navtools label{font-size:12px;color:var(--muted);display:block;margin-bottom:4px}
+select,button{font-family:inherit}
+#stateSel{width:100%;padding:7px;border-radius:8px;border:1px solid var(--line);background:var(--panel);color:var(--ink);font-size:13.5px}
+.tbtn{background:var(--chip);color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:6px 10px;font-size:12.5px;cursor:pointer;margin-top:8px;width:100%}
+.tbtn:hover{filter:brightness(.96)}
+/* ---------- main ---------- */
+main{flex:1;min-width:0;padding:26px clamp(14px,4vw,54px) 90px}
+.hero{background:linear-gradient(120deg,var(--brand),var(--brand2));border-radius:var(--radius);color:#fff;padding:26px 28px;margin-bottom:26px;box-shadow:var(--shadow)}
+.hero h2{margin:0 0 6px;font-size:26px}
+.hero p{margin:4px 0;opacity:.95;max-width:70ch}
+.statechip{display:inline-block;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.4);padding:3px 12px;border-radius:999px;font-size:13px;margin-top:8px}
+section.concept{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);margin-bottom:34px;padding:24px 26px;scroll-margin-top:12px}
+.chead{display:flex;flex-wrap:wrap;align-items:baseline;gap:10px;border-bottom:2px solid var(--line);padding-bottom:10px;margin-bottom:14px}
+.chead h3{margin:0;font-size:21px}
+.cid{background:linear-gradient(120deg,var(--brand),var(--brand2));color:#fff;border-radius:9px;font-weight:800;font-size:13px;padding:4px 10px}
+.badge{font-size:11.5px;padding:3px 9px;border-radius:999px;background:var(--chip);color:var(--muted)}
+.badge.core{background:#dcfce7;color:#166534}
+.badge.stretch{background:#fef3c7;color:#92400e}
+[data-theme="dark"] .badge.core{background:#14331f;color:#6ee7a0}
+[data-theme="dark"] .badge.stretch{background:#3a2c10;color:#fcd34d}
+h4.part{font-size:15px;margin:22px 0 10px;display:flex;align-items:center;gap:8px}
+h4.part .ico{width:26px;height:26px;border-radius:8px;display:inline-flex;align-items:center;justify-content:center;background:var(--chip);font-size:14px}
+ul.know{margin:0;padding-left:22px}
+ul.know li{margin:5px 0}
+/* ---------- animation ---------- */
+.animbox{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--bg)}
+.animbox svg{display:block;width:100%;height:auto;max-height:390px}
+.animcap{padding:10px 14px;font-size:14.5px;min-height:44px;border-top:1px solid var(--line);background:var(--panel)}
+.animctl{display:flex;gap:8px;padding:0 12px 12px;background:var(--panel);align-items:center}
+.abtn{border:1px solid var(--line);background:var(--chip);color:var(--ink);border-radius:8px;padding:6px 14px;cursor:pointer;font-size:13.5px}
+.abtn:hover{filter:brightness(.95)}
+.abtn.primary{background:var(--brand);border-color:var(--brand);color:#fff}
+.stepdots{margin-left:auto;font-size:12.5px;color:var(--muted)}
+@keyframes pop{0%{opacity:0;transform:scale(.4)}70%{transform:scale(1.12)}100%{opacity:1;transform:scale(1)}}
+@keyframes slidein{from{opacity:0;transform:translateY(-14px)}to{opacity:1;transform:none}}
+@keyframes drawline{from{stroke-dashoffset:400}to{stroke-dashoffset:0}}
+@keyframes wob{0%,100%{transform:rotate(0)}30%{transform:rotate(4deg)}60%{transform:rotate(-4deg)}}
+svg .pop{animation:pop .55s ease both}
+svg .slide{animation:slidein .5s ease both}
+svg .draw{stroke-dasharray:400;animation:drawline 1s ease both}
+svg text{font-family:inherit}
+/* ---------- quiz ---------- */
+.q{border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin:10px 0;background:var(--bg)}
+.q .qt{font-weight:600;margin-bottom:10px}
+.qnum{color:var(--brand);font-weight:800;margin-right:6px}
+.choices{display:grid;gap:8px}
+.choice{display:flex;gap:10px;align-items:flex-start;border:1.5px solid var(--line);background:var(--panel);border-radius:10px;padding:9px 12px;cursor:pointer;font-size:15px;text-align:left;color:var(--ink);width:100%}
+.choice:hover{border-color:var(--brand)}
+.choice .letter{font-weight:800;color:var(--brand)}
+.choice.correct{border-color:var(--good);background:rgba(22,163,74,.09)}
+.choice.wrong{border-color:var(--bad);background:rgba(220,38,38,.08)}
+.choice:disabled{cursor:default;opacity:.92}
+.explain{margin-top:10px;font-size:14px;border-left:3px solid var(--good);padding:6px 12px;background:rgba(22,163,74,.07);border-radius:0 8px 8px 0;display:none}
+.explain.bad{border-color:var(--bad);background:rgba(220,38,38,.06)}
+.reveal{margin-top:10px;display:none;font-size:14.5px;border-left:3px solid var(--brand2);padding:8px 12px;background:rgba(14,165,233,.07);border-radius:0 8px 8px 0}
+.reveal .ans{font-weight:700}
+.rbtn{margin-top:10px;border:1px solid var(--brand2);color:var(--brand2);background:transparent;border-radius:8px;padding:5px 12px;font-size:13px;cursor:pointer}
+.rbtn:hover{background:rgba(14,165,233,.08)}
+.scorebar{display:flex;align-items:center;gap:12px;margin-top:10px;font-size:14px}
+.scorepill{background:var(--chip);border-radius:999px;padding:4px 14px;font-weight:700}
+.challenge{border:2px dashed var(--gold);border-radius:12px;padding:16px 18px;background:rgba(245,158,11,.06)}
+.challenge .qt{font-weight:600}
+.frac{display:inline-flex;flex-direction:column;align-items:center;vertical-align:middle;margin:0 2px;line-height:1.05;font-size:.92em}
+.frac>span:first-child{border-bottom:1.5px solid currentColor;padding:0 4px}
+.frac>span:last-child{padding:0 4px}
+table.qtab{border-collapse:collapse;margin:8px 0;font-size:14px}
+table.qtab th,table.qtab td{border:1px solid var(--line);padding:4px 12px;text-align:center}
+table.qtab th{background:var(--chip)}
+/* ---------- answer key ---------- */
+#answerkey{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:24px 26px;box-shadow:var(--shadow)}
+#answerkey h3{margin-top:0}
+.akconcept{margin:18px 0;border-top:1px solid var(--line);padding-top:12px}
+.akconcept h4{margin:0 0 8px}
+.akrow{font-size:14px;margin:4px 0}
+.akrow details{display:inline}
+.akrow summary{cursor:pointer;color:var(--brand2);display:inline;font-size:13px}
+.akmc span{display:inline-block;background:var(--chip);border-radius:7px;padding:2px 9px;margin:2px 4px 2px 0;font-size:13.5px}
+.topbtn{position:fixed;right:22px;bottom:22px;background:var(--brand);color:#fff;border:none;border-radius:999px;width:46px;height:46px;font-size:20px;cursor:pointer;box-shadow:var(--shadow)}
+mark.hl{background:rgba(245,158,11,.35);border-radius:4px;padding:0 3px;color:inherit}
+@media (max-width:900px){
+  .layout{flex-direction:column}
+  nav{width:100%;height:auto;position:relative;border-right:none;border-bottom:1px solid var(--line)}
+}
+@media print{
+  nav,.animbox,.topbtn,.rbtn,.tbtn{display:none!important}
+  section.concept{break-inside:avoid;box-shadow:none}
+  .reveal,.explain{display:block!important}
+}
+</style>
+</head>
+<body>
+<div class="layout">
+<nav id="nav"></nav>
+<main id="main">
+  <div class="hero">
+    <h2>Grade 5 Math Mastery 🚀</h2>
+    <p>Every concept tested on <b>any</b> US state's 5th-grade math test — all 50 states + DC — with animated lessons, 368 practice questions, and full answer keys.</p>
+    <p style="font-size:13.5px">8 units · 23 concepts · 230 multiple choice · 115 open-ended · 23 challenge problems</p>
+    <span class="statechip" id="stateInfo">Pick your state in the sidebar to see what's on <i>your</i> test.</span>
+  </div>
+  <div id="concepts"></div>
+  <section id="answerkey"></section>
+</main>
+</div>
+<button class="topbtn" onclick="scrollTo({top:0,behavior:'smooth'})" title="Back to top">↑</button>
+<script>
+/*__CONTENT__*/
+/*__ANIMS__*/
+(function(){
+"use strict";
+// ---------------- state data ----------------
+const STATES = [
+["AL","Alabama","ACAP"],["AK","Alaska","AK STAR"],["AZ","Arizona","AASA"],["AR","Arkansas","ATLAS"],
+["CA","California","CAASPP (Smarter Balanced)"],["CO","Colorado","CMAS"],["CT","Connecticut","Smarter Balanced"],
+["DE","Delaware","DeSSA (Smarter Balanced)"],["DC","District of Columbia","DC CAPE"],["FL","Florida","FAST"],
+["GA","Georgia","Georgia Milestones"],["HI","Hawaii","Smarter Balanced (HSAP)"],["ID","Idaho","ISAT"],
+["IL","Illinois","IAR"],["IN","Indiana","ILEARN"],["IA","Iowa","ISASP"],["KS","Kansas","KAP"],
+["KY","Kentucky","KSA"],["LA","Louisiana","LEAP 2025"],["ME","Maine","Maine Through Year (NWEA)"],
+["MD","Maryland","MCAP"],["MA","Massachusetts","MCAS"],["MI","Michigan","M-STEP"],["MN","Minnesota","MCA"],
+["MS","Mississippi","MAAP"],["MO","Missouri","MAP"],["MT","Montana","MAST"],["NE","Nebraska","NSCAS Growth"],
+["NV","Nevada","Smarter Balanced"],["NH","New Hampshire","NH SAS"],["NJ","New Jersey","NJSLA"],
+["NM","New Mexico","NM-MSSA"],["NY","New York","NY State Tests"],["NC","North Carolina","EOG"],
+["ND","North Dakota","ND A+"],["OH","Ohio","OST"],["OK","Oklahoma","OSTP"],["OR","Oregon","OSAS"],
+["PA","Pennsylvania","PSSA"],["RI","Rhode Island","RICAS"],["SC","South Carolina","SC READY"],
+["SD","South Dakota","Smarter Balanced"],["TN","Tennessee","TCAP"],["TX","Texas","STAAR"],
+["UT","Utah","RISE"],["VT","Vermont","VTCAP"],["VA","Virginia","SOL"],["WA","Washington","Smarter Balanced"],
+["WV","West Virginia","WVGSA"],["WI","Wisconsin","Forward Exam"],["WY","Wyoming","WY-TOPP"]];
+// concepts NOT core everywhere → the states whose test includes them
+const EXTRA = {c3:["VA"],c9:["TX","VA","OK","MN","NE"],c18:["FL","OK"],
+  c20:["TX","OK","MN","FL","VA","NE","ND","OR"],c21:["FL","VA","OK","MN"],
+  c22:["VA","SC","ND"],c23:["TX","FL"]};
+const UNIT_ICONS = ["🔢","➗","🧮","🍕","📏","📐","📊","⭐"];
+// ---------------- formatting ----------------
+function fmt(s){
+  if(s==null) return "";
+  s = String(s);
+  s = s.replace(/\{\{(\d+)\/(\d+)\}\}/g,'<span class="frac"><span>$1</span><span>$2</span></span>');
+  s = s.replace(/\[\[table\|([^\]]+)\]\]/g,(m,body)=>{
+    const rows = body.split("|").map(r=>r.split(","));
+    let h = '<table class="qtab"><tr>'+rows[0].map(c=>'<th>'+c.trim()+'</th>').join('')+'</tr>';
+    for(let i=1;i<rows.length;i++) h += '<tr>'+rows[i].map(c=>'<td>'+c.trim()+'</td>').join('')+'</tr>';
+    return h+'</table>';
+  });
+  return s;
+}
+// ---------------- storage ----------------
+const store = {
+  get(k,d){ try{const v=localStorage.getItem("g5m_"+k);return v==null?d:JSON.parse(v);}catch(e){return d} },
+  set(k,v){ try{localStorage.setItem("g5m_"+k,JSON.stringify(v))}catch(e){} }
+};
+// quiz state per concept: {answers:{qi:choiceIdx}, correct:{qi:bool}}
+const quiz = store.get("quiz",{});
+function saveQuiz(){ store.set("quiz",quiz); }
+// ---------------- build DOM ----------------
+const allConcepts = [];
+CONTENT.forEach(u=>u.concepts.forEach(c=>{c._unit=u;allConcepts.push(c);}));
+const LETTERS = ["A","B","C","D"];
+
+function conceptStatus(c){
+  const st = quiz[c.id]; if(!st) return "none";
+  const n = Object.keys(st.answers||{}).length;
+  if(n===0) return "none";
+  if(n < c.mc.length) return "part";
+  const ok = Object.values(st.correct||{}).filter(Boolean).length;
+  return ok >= 8 ? "done" : "part";
+}
+function renderNav(){
+  const sel = store.get("state","");
+  let h = '<h1>Grade 5 Math Mastery</h1><p class="sub">All 50 states + DC · 2025–26</p>';
+  h += '<div class="navtools"><label for="stateSel">🗺️ My state</label><select id="stateSel"><option value="">— Choose your state —</option>';
+  STATES.forEach(s=>{h+=`<option value="${s[0]}" ${sel===s[0]?"selected":""}>${s[1]}</option>`});
+  h += '</select><button class="tbtn" id="themeBtn">🌙 / ☀️ Toggle dark mode</button>';
+  h += '<button class="tbtn" id="resetBtn">♻️ Reset all my progress</button></div>';
+  CONTENT.forEach((u,ui)=>{
+    h += `<div class="unitblock"><div class="unithead"><span>${UNIT_ICONS[ui]} Unit ${u.unit}: ${u.title}</span><span class="count">${u.concepts.length}</span></div>`;
+    u.concepts.forEach(c=>{
+      const st = conceptStatus(c);
+      h += `<a class="navlink" href="#${c.id}"><span class="tick ${st==="done"?"done":st==="part"?"part":""}">${st==="done"?"✓":""}</span><span>${c.title}</span></a>`;
+    });
+    h += '</div>';
+  });
+  h += '<a class="navlink" href="#answerkey" style="font-weight:700">🔑 Master Answer Key</a>';
+  document.getElementById("nav").innerHTML = h;
+  document.getElementById("stateSel").onchange = e=>{store.set("state",e.target.value);renderStateLens();};
+  document.getElementById("themeBtn").onclick = ()=>{
+    const t = document.documentElement.dataset.theme==="dark"?"":"dark";
+    document.documentElement.dataset.theme = t; store.set("theme",t);
+  };
+  document.getElementById("resetBtn").onclick = ()=>{
+    if(confirm("Erase all quiz progress?")){ for(const k in quiz) delete quiz[k]; saveQuiz(); location.reload(); }
+  };
+}
+function stateBadge(c){
+  const sel = store.get("state","");
+  const extra = EXTRA[c.id];
+  if(!sel) return extra ? `<span class="badge">Tested in: ${extra.join(", ")}</span>` : `<span class="badge">Tested in every state</span>`;
+  const on = !extra || extra.includes(sel);
+  return on ? '<span class="badge core">✅ On your state\'s test</span>' : '<span class="badge stretch">🚀 Head start (not on your test yet)</span>';
+}
+function renderStateLens(){
+  const sel = store.get("state","");
+  const info = document.getElementById("stateInfo");
+  if(sel){ const s = STATES.find(x=>x[0]===sel); info.innerHTML = `📍 ${s[1]} — your test is the <b>${s[2]}</b>. Green = on it, orange = head start.`; }
+  else info.textContent = "Pick your state in the sidebar to see what's on your test.";
+  allConcepts.forEach(c=>{ document.getElementById("badge-"+c.id).innerHTML = stateBadge(c); });
+}
+function mcHTML(c){
+  let h = "";
+  c.mc.forEach((m,qi)=>{
+    h += `<div class="q" id="${c.id}-mc-${qi}"><div class="qt"><span class="qnum">${qi+1}.</span>${fmt(m.q)}</div><div class="choices">`;
+    m.choices.forEach((ch,ci)=>{
+      h += `<button class="choice" data-c="${c.id}" data-q="${qi}" data-i="${ci}"><span class="letter">${LETTERS[ci]}.</span><span>${fmt(ch)}</span></button>`;
+    });
+    h += `</div><div class="explain" id="${c.id}-ex-${qi}"></div></div>`;
+  });
+  h += `<div class="scorebar"><span class="scorepill" id="${c.id}-score">0 / ${c.mc.length}</span><button class="rbtn" data-reset="${c.id}">Try quiz again</button></div>`;
+  return h;
+}
+function openHTML(c){
+  let h = "";
+  c.open.forEach((o,qi)=>{
+    h += `<div class="q"><div class="qt"><span class="qnum">${qi+1}.</span>${fmt(o.q)}</div>
+      <button class="rbtn" data-rev="${c.id}-op-${qi}">Show answer</button>
+      <div class="reveal" id="${c.id}-op-${qi}"><span class="ans">Answer: ${fmt(o.answer)}</span><br>${fmt(o.solution)}</div></div>`;
+  });
+  return h;
+}
+function challengeHTML(c){
+  const ch = c.challenge;
+  return `<div class="challenge"><div class="qt">🧠 ${fmt(ch.q)}</div>
+    <button class="rbtn" data-rev="${c.id}-chal">Show answer</button>
+    <div class="reveal" id="${c.id}-chal"><span class="ans">Answer: ${fmt(ch.answer)}</span><br>${fmt(ch.solution)}</div></div>`;
+}
+function renderConcepts(){
+  let h = "";
+  CONTENT.forEach((u,ui)=>{
+    u.concepts.forEach(c=>{
+      h += `<section class="concept" id="${c.id}">
+      <div class="chead"><span class="cid">${c.id.toUpperCase()}</span><h3>${c.title}</h3>
+        <span class="badge">${c.standards.join(" · ")}</span><span id="badge-${c.id}"></span></div>
+      <h4 class="part"><span class="ico">📖</span>What you need to know</h4>
+      <ul class="know">${c.know.map(k=>"<li>"+fmt(k)+"</li>").join("")}</ul>
+      <h4 class="part"><span class="ico">🎬</span>Watch it in action</h4>
+      <div class="animbox" id="anim-${c.id}"></div>
+      <h4 class="part"><span class="ico">✏️</span>Multiple choice — ${c.mc.length} questions</h4>
+      ${mcHTML(c)}
+      <h4 class="part"><span class="ico">💭</span>Open-ended — show your work</h4>
+      ${openHTML(c)}
+      <h4 class="part"><span class="ico">🧩</span>Out-of-the-box challenge</h4>
+      ${challengeHTML(c)}
+      </section>`;
+    });
+  });
+  document.getElementById("concepts").innerHTML = h;
+}
+function renderAnswerKey(){
+  let h = '<h3>🔑 Master Answer Key</h3><p style="color:var(--muted);font-size:14px">Every answer in one place. Click "solution" for the worked steps. Use your browser\'s Print for a paper copy.</p>';
+  CONTENT.forEach(u=>{
+    h += `<h4 style="margin:20px 0 4px">Unit ${u.unit}: ${u.title}</h4>`;
+    u.concepts.forEach(c=>{
+      h += `<div class="akconcept"><h4>${c.id.toUpperCase()} — ${c.title}</h4><div class="akmc"><b>Multiple choice:</b> `;
+      c.mc.forEach((m,i)=>{ h += `<span>${i+1}: ${LETTERS[m.answer]}</span>`; });
+      h += '</div>';
+      c.open.forEach((o,i)=>{
+        h += `<div class="akrow"><b>Open ${i+1}:</b> ${fmt(o.answer)} <details><summary>solution</summary> ${fmt(o.solution)}</details></div>`;
+      });
+      h += `<div class="akrow"><b>Challenge:</b> ${fmt(c.challenge.answer)} <details><summary>solution</summary> ${fmt(c.challenge.solution)}</details></div></div>`;
+    });
+  });
+  document.getElementById("answerkey").innerHTML = h;
+}
+// ---------------- quiz behavior ----------------
+function refreshScore(c){
+  const st = quiz[c.id]||{answers:{},correct:{}};
+  const ok = Object.values(st.correct).filter(Boolean).length;
+  const el = document.getElementById(c.id+"-score");
+  if(el) el.textContent = ok+" / "+c.mc.length + (ok===c.mc.length?" 🎉":"");
+}
+function applySaved(c){
+  const st = quiz[c.id]; if(!st) return;
+  Object.entries(st.answers).forEach(([qi,ci])=>{ markChoice(c,+qi,+ci,false); });
+  refreshScore(c);
+}
+function markChoice(c,qi,ci,save){
+  const m = c.mc[qi];
+  const wrap = document.getElementById(`${c.id}-mc-${qi}`); if(!wrap) return;
+  const btns = wrap.querySelectorAll(".choice");
+  btns.forEach(b=>b.disabled=true);
+  btns[m.answer].classList.add("correct");
+  const good = ci===m.answer;
+  if(!good) btns[ci].classList.add("wrong");
+  const ex = document.getElementById(`${c.id}-ex-${qi}`);
+  ex.style.display="block"; ex.className = "explain"+(good?"":" bad");
+  ex.innerHTML = (good?"✅ Correct! ":"❌ Not quite — the answer is <b>"+LETTERS[m.answer]+"</b>. ")+fmt(m.explain);
+  if(save){
+    quiz[c.id] = quiz[c.id]||{answers:{},correct:{}};
+    quiz[c.id].answers[qi]=ci; quiz[c.id].correct[qi]=good;
+    saveQuiz(); refreshScore(c); renderNav(); renderStateLens();
+  }
+}
+document.addEventListener("click",e=>{
+  const ch = e.target.closest(".choice");
+  if(ch && !ch.disabled){
+    const c = allConcepts.find(x=>x.id===ch.dataset.c);
+    markChoice(c,+ch.dataset.q,+ch.dataset.i,true);
+    return;
+  }
+  const rev = e.target.closest("[data-rev]");
+  if(rev){ const d = document.getElementById(rev.dataset.rev);
+    const show = d.style.display!=="block";
+    d.style.display = show?"block":"none";
+    rev.textContent = show?"Hide answer":"Show answer"; return; }
+  const rs = e.target.closest("[data-reset]");
+  if(rs){ const cid = rs.dataset.reset; delete quiz[cid]; saveQuiz();
+    const c = allConcepts.find(x=>x.id===cid);
+    // rebuild just this concept's mc blocks
+    location.hash = "#"+cid; location.reload(); }
+});
+// ---------------- animations ----------------
+function initAnims(){
+  allConcepts.forEach(c=>{
+    const host = document.getElementById("anim-"+c.id);
+    const def = ANIMS[c.id];
+    if(!def){ host.innerHTML = '<div class="animcap">Animation coming soon.</div>'; return; }
+    const state = {i:0,timer:null};
+    host.innerHTML = `<svg viewBox="0 0 640 340" role="img" aria-label="${c.title} animation"></svg>
+      <div class="animcap"></div>
+      <div class="animctl">
+        <button class="abtn primary" data-a="play">▶ Play</button>
+        <button class="abtn" data-a="prev">◀ Back</button>
+        <button class="abtn" data-a="next">Next ▶</button>
+        <button class="abtn" data-a="replay">↻ Replay</button>
+        <span class="stepdots"></span>
+      </div>`;
+    const svg = host.querySelector("svg"), cap = host.querySelector(".animcap"), dots = host.querySelector(".stepdots");
+    function show(i,animate){
+      state.i = Math.max(0,Math.min(i,def.frames.length-1));
+      svg.innerHTML = "";
+      const s = new AnimKit(svg);
+      // draw frames 0..i; only the last one gets entrance animations
+      for(let k=0;k<=state.i;k++){ s.animate = (k===state.i)&&animate!==false; def.frames[k].draw(s); }
+      cap.innerHTML = fmt(def.frames[state.i].cap);
+      dots.textContent = "Step "+(state.i+1)+" of "+def.frames.length;
+    }
+    function stopAuto(btn){ if(state.timer){clearInterval(state.timer);state.timer=null;
+      host.querySelector('[data-a="play"]').textContent="▶ Play";} }
+    host.querySelector(".animctl").addEventListener("click",e=>{
+      const b = e.target.closest(".abtn"); if(!b) return;
+      const a = b.dataset.a;
+      if(a==="prev"){stopAuto();show(state.i-1);}
+      else if(a==="next"){stopAuto();show(state.i+1);}
+      else if(a==="replay"){stopAuto();show(0);}
+      else if(a==="play"){
+        if(state.timer){stopAuto();return;}
+        if(state.i>=def.frames.length-1) show(0);
+        b.textContent="⏸ Pause";
+        state.timer=setInterval(()=>{
+          if(state.i>=def.frames.length-1){stopAuto();}
+          else show(state.i+1);
+        },2600);
+      }
+    });
+    show(0,false);
+  });
+}
+// ---------------- boot ----------------
+document.documentElement.dataset.theme = store.get("theme","");
+renderConcepts(); renderAnswerKey(); renderNav(); renderStateLens();
+allConcepts.forEach(applySaved); initAnims();
+})();
+</script>
+</body>
+</html>

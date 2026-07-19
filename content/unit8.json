@@ -1,0 +1,220 @@
+{
+  "unit": 8,
+  "title": "State Specials",
+  "concepts": [
+    {
+      "id": "c22",
+      "title": "Probability Basics",
+      "standards": ["VA 5.PS.3", "SC DPSR", "ND DPS"],
+      "states": "Virginia, South Carolina, North Dakota — grade 7 everywhere else, so this is a big head start",
+      "know": [
+        "Probability measures how likely an event is on a scale from 0 (impossible) to 1 (certain).",
+        "The likelihood words in order are: impossible (0), unlikely (less than {{1/2}}), equally likely (exactly {{1/2}}), likely (more than {{1/2}}), and certain (1).",
+        "Probability of an event = number of favorable outcomes ÷ total number of outcomes, written as a fraction in simplest form.",
+        "The sample space is the list of ALL possible outcomes. You can find it with an organized list or a tree diagram.",
+        "The Fundamental Counting Principle says: multiply the number of choices at each step. With 3 shirts and 2 pants, there are 3 × 2 = 6 outfits."
+      ],
+      "mc": [
+        {
+          "q": "A spinner has 4 equal sections colored red, blue, green, and yellow. What is the probability the spinner lands on blue?",
+          "choices": ["{{1/4}}", "{{1/3}}", "{{1/2}}", "{{3/4}}"],
+          "answer": 0,
+          "explain": "There is 1 blue section out of 4 equal sections, so the probability is {{1/4}}. {{1/3}} comes from comparing blue to the other 3 colors instead of to all 4 sections."
+        },
+        {
+          "q": "A bag holds only red marbles. Which word best describes the chance of picking a red marble?",
+          "choices": ["impossible", "unlikely", "likely", "certain"],
+          "answer": 3,
+          "explain": "Every marble in the bag is red, so picking red must happen. That means the event is certain — its probability is 1, the top of the probability scale."
+        },
+        {
+          "q": "An event that is <b>equally likely</b> to happen or not happen has a probability of:",
+          "choices": ["0", "{{1/2}}", "1", "2"],
+          "answer": 1,
+          "explain": "Equally likely means the event happens half the time, which is {{1/2}} on the 0-to-1 scale. Probability can never be more than 1, so 2 is not possible."
+        },
+        {
+          "q": "Marcus rolls a fair number cube labeled 1 to 6. What is the probability he rolls a number greater than 4?",
+          "choices": ["{{1/3}}", "{{1/6}}", "{{1/2}}", "{{2/3}}"],
+          "answer": 0,
+          "explain": "The numbers greater than 4 are 5 and 6, so the probability is {{2/6}} = {{1/3}}. {{1/2}} comes from wrongly counting 4, 5, and 6; {{1/6}} counts only one number."
+        },
+        {
+          "q": "Jada has 3 shirts and 2 pairs of pants. Using the Fundamental Counting Principle, how many different shirt-and-pants outfits can she make?",
+          "choices": ["5", "6", "9", "12"],
+          "answer": 1,
+          "explain": "Multiply the choices: 3 × 2 = 6 outfits. Adding 3 + 2 = 5 is the common mistake — the Counting Principle says multiply, not add."
+        },
+        {
+          "q": "A bag contains 3 red, 5 blue, and 2 green marbles. What is the probability of picking a green marble?",
+          "choices": ["{{1/5}}", "{{1/4}}", "{{2/5}}", "{{1/2}}"],
+          "answer": 0,
+          "explain": "There are 2 green marbles out of 3 + 5 + 2 = 10 total, so {{2/10}} = {{1/5}}. {{1/4}} comes from forgetting to count the green marbles in the total ({{2/8}})."
+        },
+        {
+          "q": "Kofi flips a coin two times. How many outcomes are in the sample space?",
+          "choices": ["2", "3", "4", "6"],
+          "answer": 2,
+          "explain": "A tree diagram shows HH, HT, TH, TT — that is 2 × 2 = 4 outcomes. The answer 3 comes from thinking HT and TH are the same, but they are different outcomes."
+        },
+        {
+          "q": "A sandwich shop offers 4 breads, 3 meats, and 2 cheeses. How many different sandwiches with one bread, one meat, and one cheese are possible?",
+          "choices": ["9", "12", "14", "24"],
+          "answer": 3,
+          "explain": "Multiply all three choices: 4 × 3 × 2 = 24. Adding gives 9, and 12 comes from multiplying only the breads and meats and forgetting the cheese step."
+        },
+        {
+          "q": "A bag holds 4 red marbles and 6 blue marbles. Which word best describes the chance of picking a blue marble?",
+          "choices": ["unlikely", "equally likely", "likely", "certain"],
+          "answer": 2,
+          "explain": "P(blue) = {{6/10}} = {{3/5}}, which is more than {{1/2}}, so blue is likely. It is not equally likely just because there are two colors — the amounts are not equal."
+        },
+        {
+          "q": "A spinner has 8 equal sections numbered 1 through 8. What is the probability of landing on an even number that is greater than 3?",
+          "choices": ["{{1/8}}", "{{3/8}}", "{{1/2}}", "{{5/8}}"],
+          "answer": 1,
+          "explain": "The numbers that are even AND greater than 3 are 4, 6, and 8 — that is {{3/8}}. {{1/2}} counts all four evens, and {{5/8}} counts every number greater than 3."
+        }
+      ],
+      "open": [
+        {
+          "q": "A bag has 2 red, 3 green, and 5 yellow marbles. What is the probability of picking a yellow marble? Write your answer as a fraction in simplest form.",
+          "answer": "{{1/2}}",
+          "solution": "Total marbles: 2 + 3 + 5 = 10. Favorable outcomes: 5 yellow. So P(yellow) = {{5/10}}, which simplifies to {{1/2}}."
+        },
+        {
+          "q": "A deli lets you build a sandwich by choosing 1 of 5 fillings and 1 of 3 breads. How many different sandwiches are possible?",
+          "answer": "15",
+          "solution": "Use the Fundamental Counting Principle: multiply the number of choices at each step. 5 fillings × 3 breads = 15 different sandwiches."
+        },
+        {
+          "q": "Priya rolls a number cube labeled 1 to 6 and then flips a coin. How many outcomes are in the sample space?",
+          "answer": "12",
+          "solution": "The cube has 6 outcomes and the coin has 2 outcomes. A tree diagram would show 6 branches, each splitting into 2, so there are 6 × 2 = 12 outcomes in the sample space."
+        },
+        {
+          "q": "A spinner has 6 equal sections numbered 1 through 6. What is the probability of landing on a multiple of 3? Write your answer as a fraction in simplest form.",
+          "answer": "{{1/3}}",
+          "solution": "The multiples of 3 from 1 to 6 are 3 and 6, so there are 2 favorable outcomes out of 6. P = {{2/6}} = {{1/3}} in simplest form."
+        },
+        {
+          "q": "A bag holds 7 blue marbles and 1 white marble. Which likelihood word — impossible, unlikely, equally likely, likely, or certain — best describes picking a blue marble?",
+          "answer": "likely",
+          "solution": "P(blue) = {{7/8}}, which is more than {{1/2}} but less than 1. It is not certain because the white marble could be picked, so the best word is likely."
+        }
+      ],
+      "challenge": {
+        "q": "A bag holds only red and blue marbles. The probability of picking a red marble is {{2/5}}, and there are exactly 6 red marbles. How many blue marbles are in the bag?",
+        "answer": "9 blue marbles",
+        "solution": "P(red) = {{2/5}} means 2 out of every 5 marbles are red. Since 6 red marbles represent {{2/5}} of the bag, {{1/5}} of the bag is 6 ÷ 2 = 3 marbles. So the whole bag holds 5 × 3 = 15 marbles. Blue marbles: 15 − 6 = 9."
+      }
+    },
+    {
+      "id": "c23",
+      "title": "Personal Financial Literacy",
+      "standards": ["TX 5.10A–F", "FL MA.5.M.2.1"],
+      "states": "Texas & Florida — money smarts for everyone",
+      "know": [
+        "Income tax is a tax on the money you earn. Payroll tax is taken out of paychecks to pay for programs like Social Security and Medicare.",
+        "Sales tax is added to the price when you buy something at a store. Property tax is paid each year by people who own a home or land, and it often helps pay for schools.",
+        "Gross income is ALL the money earned before anything is taken out. Net income is the take-home pay after taxes and deductions — net is always less than gross.",
+        "Ways to pay: cash (simple, but can be lost), check (paper order to your bank), debit card (money leaves your account right away), credit card (borrowed money you must pay back, sometimes with interest), and electronic payments (fast, but need an account).",
+        "A budget is a plan for income and expenses. A budget is balanced when income covers all the expenses."
+      ],
+      "mc": [
+        {
+          "q": "Zoe buys a skateboard, and the store adds an extra amount to the price at the register. Which kind of tax is this?",
+          "choices": ["income tax", "payroll tax", "sales tax", "property tax"],
+          "answer": 2,
+          "explain": "A tax added to the price of something you buy is sales tax. Income and payroll taxes come out of money you earn, and property tax is paid on homes and land."
+        },
+        {
+          "q": "What does <b>gross income</b> mean?",
+          "choices": ["All the money earned before taxes are taken out", "The money left after taxes are taken out", "Money kept in a savings account", "The amount a family spends each month"],
+          "answer": 0,
+          "explain": "Gross income is the total earned before any deductions. Money left after taxes is net income — mixing up gross and net is the most common mistake."
+        },
+        {
+          "q": "Which payment method uses <b>borrowed</b> money that must be paid back later, sometimes with interest?",
+          "choices": ["cash", "check", "debit card", "credit card"],
+          "answer": 3,
+          "explain": "A credit card borrows money that must be paid back, possibly with interest. A debit card is different — it takes money out of your own bank account right away."
+        },
+        {
+          "q": "Mr. Diaz earns a gross income of $3,000 each month. His employer takes out $450 in taxes. What is his net income?",
+          "choices": ["$450", "$2,550", "$3,000", "$3,450"],
+          "answer": 1,
+          "explain": "Net income = gross income − deductions: $3,000 − $450 = $2,550. Choosing $3,450 adds the taxes instead of subtracting, and $3,000 is the gross, not the net."
+        },
+        {
+          "q": "Which statement best describes <b>property tax</b>?",
+          "choices": ["A tax paid each year by people who own a home or land", "A tax added to the price of items at a store", "A tax taken out of a worker's paycheck", "A fee for using a credit card"],
+          "answer": 0,
+          "explain": "Property tax is paid by owners of homes or land, and it often helps fund schools. The store tax is sales tax, and the paycheck tax is payroll or income tax."
+        },
+        {
+          "q": "Keisha plans a weekend budget and wants to save whatever money is left. [[table|Item,Amount|Income,$40|Snacks,$12|Game,$15]] How much can she put into savings?",
+          "choices": ["$12", "$13", "$27", "$67"],
+          "answer": 1,
+          "explain": "Savings = income − expenses: $40 − $12 − $15 = $13. The answer $27 is the total of the expenses, not what is left over."
+        },
+        {
+          "q": "Which statement best describes <b>payroll tax</b>?",
+          "choices": ["A tax added when you buy groceries", "A tax paid only by store owners", "Money taken out of a paycheck for programs like Social Security and Medicare", "A yearly tax on houses and land"],
+          "answer": 2,
+          "explain": "Payroll tax comes straight out of a worker's paycheck to fund Social Security and Medicare. The grocery tax is sales tax, and the yearly house tax is property tax."
+        },
+        {
+          "q": "Liam buys 3 notebooks that cost $2.35 each. The sales tax is $0.42. He pays with a $10 bill. How much change does he get?",
+          "choices": ["$2.53", "$2.95", "$3.37", "$7.47"],
+          "answer": 0,
+          "explain": "Cost: 3 × $2.35 = $7.05, plus $0.42 tax = $7.47. Change: $10.00 − $7.47 = $2.53. The answer $2.95 forgets the tax, and $7.47 is the total cost, not the change."
+        },
+        {
+          "q": "Ava's gross pay is $520 per week. Each week $52 is deducted for income tax and $31.20 for payroll tax. What is her weekly net income?",
+          "choices": ["$468.00", "$488.80", "$603.20", "$436.80"],
+          "answer": 3,
+          "explain": "Net = $520 − $52 − $31.20 = $436.80. The answer $468.00 subtracts only the income tax, $488.80 subtracts only the payroll tax, and $603.20 adds the deductions instead."
+        },
+        {
+          "q": "The Park family's monthly income is $2,400. Their expenses are shown. [[table|Expense,Amount|Rent,$950.00|Food,$525.50|Utilities,$180.25|Other,$310.00]] How much money is left after all expenses are paid?",
+          "choices": ["$1,965.75", "$534.25", "$444.25", "$434.25"],
+          "answer": 3,
+          "explain": "Total expenses: $950 + $525.50 + $180.25 + $310 = $1,965.75. Money left: $2,400 − $1,965.75 = $434.25. The answer $1,965.75 is the expense total — the problem asks what is left."
+        }
+      ],
+      "open": [
+        {
+          "q": "Jordan earns a gross pay of $185 for a week of lifeguarding. His deductions total $23.15. What is his net pay?",
+          "answer": "$161.85",
+          "solution": "Net pay = gross pay − deductions. Subtract: $185.00 − $23.15 = $161.85. Net pay is always less than gross pay."
+        },
+        {
+          "q": "A board game costs $24.00, and the sales tax on it is $1.68. What is the total cost of the game?",
+          "answer": "$25.68",
+          "solution": "Sales tax is added to the price. Total = $24.00 + $1.68 = $25.68."
+        },
+        {
+          "q": "Nia's income this month is $15 from allowance and $22 from dog walking. Her expenses total $28.50. After paying her expenses, how much money does she have left?",
+          "answer": "$8.50",
+          "solution": "First find total income: $15 + $22 = $37. Then subtract expenses: $37.00 − $28.50 = $8.50 left over."
+        },
+        {
+          "q": "The Nguyen family pays a tax to their town every year because they own their house. Which type of tax is this?",
+          "answer": "property tax",
+          "solution": "A tax paid on a home or land that someone owns is a property tax. It is usually paid every year and often helps pay for local schools and services."
+        },
+        {
+          "q": "Rosa buys 2 books that cost $6.75 each and a bookmark for $1.20. She pays with a $20 bill. How much change should she get?",
+          "answer": "$5.30",
+          "solution": "Books: 2 × $6.75 = $13.50. Add the bookmark: $13.50 + $1.20 = $14.70. Change: $20.00 − $14.70 = $5.30."
+        }
+      ],
+      "challenge": {
+        "q": "Devon earns $9.50 per hour and works 8 hours at a summer job. His employer deducts $11.40 in taxes from his pay. Devon wants headphones that cost $58.99 plus $4.13 sales tax. After buying the headphones with his net pay, how much money will he have left?",
+        "answer": "$1.48",
+        "solution": "Gross pay: $9.50 × 8 = $76.00. Net pay: $76.00 − $11.40 = $64.60. Headphones total: $58.99 + $4.13 = $63.12. Money left: $64.60 − $63.12 = $1.48."
+      }
+    }
+  ]
+}

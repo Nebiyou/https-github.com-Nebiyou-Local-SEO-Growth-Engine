@@ -1,0 +1,332 @@
+{
+  "unit": 2,
+  "title": "Whole-Number & Decimal Operations",
+  "concepts": [
+    {
+      "id": "c4",
+      "title": "Multi-Digit Multiplication",
+      "standards": ["5.NBT.B.5"],
+      "states": "Tested in every state",
+      "know": [
+        "The standard algorithm multiplies one digit at a time and then adds the partial products.",
+        "When you multiply by a tens digit, write a 0 in the ones place first — you are really multiplying by tens. For a hundreds digit, write two 0s.",
+        "Keep every partial product lined up by place value; a slipped column changes the whole answer.",
+        "Estimate first by rounding each factor: 48 × 21 is about 50 × 20 = 1,000, so an answer near 1,000 makes sense.",
+        "Always check your product against your estimate — if they are far apart, look for a missing zero or a carry mistake."
+      ],
+      "mc": [
+        {
+          "q": "What is 34 × 6?",
+          "choices": ["184", "204", "244", "304"],
+          "answer": 1,
+          "explain": "6 × 4 = 24, so write 4 and carry 2. Then 6 × 3 = 18, plus the carried 2 is 20. The answer is 204. Choosing 184 means the carried 2 was forgotten."
+        },
+        {
+          "q": "What is 27 × 30?",
+          "choices": ["810", "57", "81", "8,100"],
+          "answer": 0,
+          "explain": "27 × 3 = 81, and multiplying by 30 means one more zero: 810. The answer 81 forgets the zero, and 57 comes from adding instead of multiplying."
+        },
+        {
+          "q": "Round each factor to estimate 48 × 21. Which is the best estimate?",
+          "choices": ["100", "1,000", "1,200", "10,000"],
+          "answer": 1,
+          "explain": "48 rounds to 50 and 21 rounds to 20, so the estimate is 50 × 20 = 1,000. An estimate of 100 or 10,000 comes from miscounting zeros."
+        },
+        {
+          "q": "What is 56 × 34?",
+          "choices": ["392", "1,524", "1,904", "2,024"],
+          "answer": 2,
+          "explain": "56 × 4 = 224 and 56 × 30 = 1,680; the sum is 1,904. Getting 392 comes from writing 168 instead of 1,680 — the placeholder zero was skipped."
+        },
+        {
+          "q": "What is 209 × 34?",
+          "choices": ["986", "6,270", "7,006", "7,106"],
+          "answer": 3,
+          "explain": "209 × 4 = 836 and 209 × 30 = 6,270, so 836 + 6,270 = 7,106. The answer 986 comes from ignoring the 0 and multiplying 29 × 34."
+        },
+        {
+          "q": "A stadium has 24 sections with 358 seats in each section. How many seats does the stadium have?",
+          "choices": ["2,148", "8,592", "8,952", "9,592"],
+          "answer": 1,
+          "explain": "358 × 4 = 1,432 and 358 × 20 = 7,160; the total is 8,592 seats. The answer 2,148 comes from adding 1,432 + 716 without the placeholder zero."
+        },
+        {
+          "q": "What is 45 × 306?",
+          "choices": ["1,620", "13,500", "13,570", "13,770"],
+          "answer": 3,
+          "explain": "45 × 300 = 13,500 and 45 × 6 = 270, so the product is 13,770. The answer 1,620 is 45 × 36 — the zero inside 306 was dropped."
+        },
+        {
+          "q": "What is 234 × 152?",
+          "choices": ["3,978", "34,568", "35,668", "35,568"],
+          "answer": 3,
+          "explain": "Partial products: 234 × 2 = 468, 234 × 50 = 11,700, 234 × 100 = 23,400. Their sum is 35,568. The answer 3,978 comes from leaving out both placeholder zeros."
+        },
+        {
+          "q": "Mia multiplied 47 × 82 and got 854. Which statement best checks her answer with estimation?",
+          "choices": [
+            "854 is too small — rounding gives 50 × 80 = 4,000, so the product should be near 4,000.",
+            "854 is reasonable because it is greater than 47 + 82.",
+            "854 is too large — the product should be close to 500.",
+            "854 is too small — the product should be close to 40,000."
+          ],
+          "answer": 0,
+          "explain": "Rounding gives 50 × 80 = 4,000, so 854 is far too small (the real product is 3,854). Comparing to 47 + 82 tells you nothing, and 40,000 uses a misplaced zero."
+        },
+        {
+          "q": "A school orders 36 boxes of 48 markers and 15 packs of 64 crayons. How many markers and crayons is that in all?",
+          "choices": ["960", "1,728", "2,688", "3,072"],
+          "answer": 2,
+          "explain": "36 × 48 = 1,728 markers and 15 × 64 = 960 crayons; 1,728 + 960 = 2,688. Answers 1,728 and 960 each count only one of the two orders."
+        }
+      ],
+      "open": [
+        {
+          "q": "Use the standard algorithm to find 76 × 58.",
+          "answer": "4,408",
+          "solution": "76 × 8 = 608. 76 × 50 = 3,800 (write the placeholder zero, then 76 × 5). Add the partial products: 608 + 3,800 = 4,408."
+        },
+        {
+          "q": "A bakery makes 145 muffins every day. How many muffins does it make in 28 days?",
+          "answer": "4,060 muffins",
+          "solution": "Multiply 145 × 28. First 145 × 8 = 1,160. Then 145 × 20 = 2,900. Add: 1,160 + 2,900 = 4,060 muffins."
+        },
+        {
+          "q": "Find 302 × 46.",
+          "answer": "13,892",
+          "solution": "302 × 6 = 1,812. 302 × 40 = 12,080 — keep the 0 in 302 in its column. Add the partial products: 1,812 + 12,080 = 13,892."
+        },
+        {
+          "q": "Each of the 32 classrooms at Oak Hill School receives 125 pencils. How many pencils is that in all?",
+          "answer": "4,000 pencils",
+          "solution": "Multiply 125 × 32. 125 × 2 = 250 and 125 × 30 = 3,750. Add: 250 + 3,750 = 4,000 pencils. Check: 125 × 32 = 125 × 8 × 4 = 1,000 × 4 = 4,000."
+        },
+        {
+          "q": "Estimate 68 × 41 by rounding both factors, then find the exact product.",
+          "answer": "Estimate 2,800; exact product 2,788",
+          "solution": "Round: 70 × 40 = 2,800. Exact: 68 × 1 = 68 and 68 × 40 = 2,720, so 68 + 2,720 = 2,788. The exact answer is close to the estimate, so it is reasonable."
+        }
+      ],
+      "challenge": {
+        "q": "Use each of the digits 1, 2, 3, and 4 exactly once to make a 2-digit × 2-digit problem with the <b>greatest</b> possible product. What is the problem and its product?",
+        "answer": "41 × 32 = 1,312",
+        "solution": "Put the two largest digits, 4 and 3, in the tens places. The two best candidates are 41 × 32 and 42 × 31. Compute both: 41 × 32 = 1,312 and 42 × 31 = 1,302. Pairing the larger tens digit with the smaller ones digit wins, so the greatest product is 41 × 32 = 1,312."
+      }
+    },
+    {
+      "id": "c5",
+      "title": "Division with 2-Digit Divisors & Remainders",
+      "standards": ["5.NBT.B.6", "OK 5.N.2.3"],
+      "states": "Tested in every state",
+      "know": [
+        "Long division repeats the cycle: divide, multiply, subtract, bring down.",
+        "The remainder must always be smaller than the divisor — if it is not, the quotient digit is too small.",
+        "Check any division with: quotient × divisor + remainder = dividend.",
+        "Estimate first with compatible numbers: 812 ÷ 19 is about 800 ÷ 20 = 40.",
+        "The story decides what the remainder means: round up (you need one more bus), drop it (only full boxes count), or write it as a fraction or decimal (sharing leftover ribbon)."
+      ],
+      "mc": [
+        {
+          "q": "What is 96 ÷ 12?",
+          "choices": ["6", "7", "8", "9"],
+          "answer": 2,
+          "explain": "12 × 8 = 96, so 96 ÷ 12 = 8. Checking 12 × 7 = 84 and 12 × 9 = 108 shows those are too small and too big."
+        },
+        {
+          "q": "What is 85 ÷ 20?",
+          "choices": ["3 R25", "4 R5", "4 R15", "5 R0"],
+          "answer": 1,
+          "explain": "20 × 4 = 80 and 85 − 80 = 5, so the answer is 4 R5. The answer 3 R25 is wrong because a remainder of 25 is bigger than the divisor 20."
+        },
+        {
+          "q": "Use compatible numbers to estimate 812 ÷ 19. Which is the best estimate?",
+          "choices": ["40", "4", "400", "45"],
+          "answer": 0,
+          "explain": "812 is close to 800 and 19 is close to 20, so 800 ÷ 20 = 40. The answers 4 and 400 come from dropping or adding a zero."
+        },
+        {
+          "q": "What is 672 ÷ 21?",
+          "choices": ["23", "32", "31 R21", "302"],
+          "answer": 1,
+          "explain": "21 × 32 = 672, so the quotient is exactly 32. The answer 31 R21 is wrong because the remainder 21 equals the divisor — you can divide one more time."
+        },
+        {
+          "q": "What is 945 ÷ 27?",
+          "choices": ["34 R27", "36", "45", "35"],
+          "answer": 3,
+          "explain": "27 × 35 = 945, so 945 ÷ 27 = 35 with no remainder. The answer 34 R27 fails the remainder rule: 27 is not smaller than the divisor 27."
+        },
+        {
+          "q": "There are 389 students going on a trip. Each bus holds 45 students. How many buses are needed so everyone can ride?",
+          "choices": ["8", "8 R29", "9", "10"],
+          "answer": 2,
+          "explain": "389 ÷ 45 = 8 R29. Eight buses seat only 360 students, so the 29 leftover students need one more bus: 9 buses. Answering 8 R29 forgets to interpret the remainder."
+        },
+        {
+          "q": "Keisha has 250 beads. Each bracelet uses exactly 18 beads. How many complete bracelets can she make?",
+          "choices": ["12", "14", "16", "13"],
+          "answer": 3,
+          "explain": "250 ÷ 18 = 13 R16, so she can finish 13 bracelets; the 16 leftover beads are not enough for another. The answer 16 confuses the remainder with the quotient."
+        },
+        {
+          "q": "What is 3,456 ÷ 24?",
+          "choices": ["134", "1,440", "154", "144"],
+          "answer": 3,
+          "explain": "24 × 144 = 3,456, so the quotient is 144. Check: 24 × 100 = 2,400 and 24 × 44 = 1,056; together 3,456. The answers 134 and 154 come from a wrong middle digit."
+        },
+        {
+          "q": "A ribbon 175 inches long is cut into 14 equal pieces. How long is each piece?",
+          "choices": ["12 inches", "12.7 inches", "12{{1/2}} inches", "13 inches"],
+          "answer": 2,
+          "explain": "175 ÷ 14 = 12 R7, and the leftover 7 inches split into 14 pieces is {{7/14}} = {{1/2}} inch, so each piece is 12{{1/2}} inches. Writing 12.7 wrongly turns remainder 7 into 7 tenths."
+        },
+        {
+          "q": "A farmer packs 2,000 apples into crates that each hold 36 apples. After filling as many crates as possible, how many apples are left over?",
+          "choices": ["20", "15", "36", "55"],
+          "answer": 0,
+          "explain": "2,000 ÷ 36 = 55 R20, since 36 × 55 = 1,980 and 2,000 − 1,980 = 20. The answer 55 is the number of full crates, not the leftover apples."
+        }
+      ],
+      "open": [
+        {
+          "q": "Find 1,248 ÷ 16.",
+          "answer": "78",
+          "solution": "16 goes into 124 seven times (16 × 7 = 112). Subtract: 124 − 112 = 12; bring down the 8 to make 128. 16 × 8 = 128, so the quotient is 78. Check: 16 × 78 = 1,248."
+        },
+        {
+          "q": "Find 4,375 ÷ 25.",
+          "answer": "175",
+          "solution": "25 goes into 43 once (25), remainder 18; bring down 7 to make 187. 25 × 7 = 175, remainder 12; bring down 5 to make 125. 25 × 5 = 125 exactly. The quotient is 175. Check: 25 × 175 = 4,375."
+        },
+        {
+          "q": "A summer camp needs 1 tent for every 12 campers. If 150 campers sign up, how many tents does the camp need?",
+          "answer": "13 tents",
+          "solution": "150 ÷ 12 = 12 R6. Twelve tents cover only 144 campers, so the 6 leftover campers still need a tent. Round the quotient up: the camp needs 13 tents."
+        },
+        {
+          "q": "A 138-ounce jug of juice is poured equally into 24 cups. How many ounces go in each cup? Write the answer as a decimal.",
+          "answer": "5.75 ounces",
+          "solution": "138 ÷ 24 = 5 R18. Write the remainder as a fraction of the divisor: {{18/24}} = {{3/4}} = 0.75. Each cup gets 5.75 ounces. Check: 24 × 5.75 = 138."
+        },
+        {
+          "q": "Priya divided a number by 32 and got a quotient of 46 with a remainder of 11. What number did she start with?",
+          "answer": "1,483",
+          "solution": "Use the check rule: dividend = quotient × divisor + remainder. 46 × 32 = 1,472, and 1,472 + 11 = 1,483. So Priya started with 1,483."
+        }
+      ],
+      "challenge": {
+        "q": "The fifth-grade fundraiser collects 2,375 water bottles. Bottles are bundled into packs of 16, and 12 packs fill one case. How many <b>full cases</b> can they make, and how many bottles are <b>not</b> in a full case?",
+        "answer": "12 full cases; 71 bottles not in a full case",
+        "solution": "First find the packs: 2,375 ÷ 16 = 148 R7, so there are 148 full packs and 7 loose bottles. Next find the cases: 148 ÷ 12 = 12 R4, so 12 full cases with 4 packs left over. The bottles not in a full case are the 4 leftover packs plus the loose bottles: 4 × 16 + 7 = 64 + 7 = 71 bottles."
+      }
+    },
+    {
+      "id": "c6",
+      "title": "Decimal Operations (+ − × ÷)",
+      "standards": ["5.NBT.B.7"],
+      "states": "Tested in every state",
+      "know": [
+        "To add or subtract decimals, line up the decimal points and fill empty places with zeros: 5 − 1.68 becomes 5.00 − 1.68.",
+        "To multiply decimals, multiply as if they were whole numbers, then give the product as many decimal places as both factors have together.",
+        "To divide by a decimal, shift the decimal point in both numbers until the divisor is whole: 4.86 ÷ 0.6 = 48.6 ÷ 6.",
+        "Money is decimals to hundredths — dollars and cents work exactly like ones and hundredths.",
+        "Estimate first to place the decimal point: 0.85 × 6.4 is about 1 × 6 = 6, so 5.44 makes sense but 54.4 does not."
+      ],
+      "mc": [
+        {
+          "q": "What is 3.4 + 2.75?",
+          "choices": ["3.09", "5.15", "6.15", "6.05"],
+          "answer": 2,
+          "explain": "Line up the decimal points: 3.40 + 2.75 = 6.15. The answer 3.09 comes from lining up the right-hand digits instead, which treats 3.4 as 0.34."
+        },
+        {
+          "q": "What is 5 − 1.68?",
+          "choices": ["3.32", "3.42", "4.32", "4.68"],
+          "answer": 0,
+          "explain": "Write 5 as 5.00, then subtract: 5.00 − 1.68 = 3.32. The answer 4.68 subtracts only the whole number 1 and just attaches .68."
+        },
+        {
+          "q": "What is 0.6 × 4?",
+          "choices": ["0.24", "2.4", "4.6", "24"],
+          "answer": 1,
+          "explain": "6 × 4 = 24, and one decimal place in the factors means one in the product: 2.4. The answer 24 drops the decimal point; 0.24 adds an extra place."
+        },
+        {
+          "q": "What is 2.5 × 1.3?",
+          "choices": ["3.8", "3.25", "32.5", "0.325"],
+          "answer": 1,
+          "explain": "25 × 13 = 325, and the factors have two decimal places in all, so the product is 3.25. The answer 3.8 adds instead of multiplying; 32.5 places only one decimal place."
+        },
+        {
+          "q": "Amara buys a smoothie for $4.35 and a muffin for $2.80. She pays with a $10 bill. How much change does she get?",
+          "choices": ["$2.85", "$2.95", "$3.85", "$7.15"],
+          "answer": 0,
+          "explain": "The total is $4.35 + $2.80 = $7.15, and $10.00 − $7.15 = $2.85. The answer $7.15 is the total spent, not the change; $3.85 comes from a borrowing slip."
+        },
+        {
+          "q": "What is 7.2 ÷ 8?",
+          "choices": ["0.09", "0.8", "0.9", "9"],
+          "answer": 2,
+          "explain": "72 ÷ 8 = 9, and since 7.2 is 72 tenths, the quotient is 9 tenths = 0.9. The answer 9 ignores the decimal point; 0.09 shifts it one place too far."
+        },
+        {
+          "q": "What is 4.86 ÷ 0.6?",
+          "choices": ["0.81", "81", "810", "8.1"],
+          "answer": 3,
+          "explain": "Shift both decimal points one place: 4.86 ÷ 0.6 = 48.6 ÷ 6 = 8.1. The answer 0.81 forgets to shift; 81 and 810 shift too many places."
+        },
+        {
+          "q": "Ribbon costs $0.85 per foot. Zoe buys 6.4 feet. How much does she pay?",
+          "choices": ["$4.85", "$5.34", "$5.44", "$54.40"],
+          "answer": 2,
+          "explain": "85 × 64 = 5,440, and three decimal places in the factors give 5.440, so $5.44. Estimate: about 1 × 6 = 6, so $54.40 has the decimal point in the wrong spot."
+        },
+        {
+          "q": "Which is equal to 3.6 ÷ 0.04?",
+          "choices": ["0.9", "9", "900", "90"],
+          "answer": 3,
+          "explain": "Multiply both numbers by 100: 3.6 ÷ 0.04 = 360 ÷ 4 = 90. The answer 9 shifts the divisor two places but the dividend only one — both must shift the same amount."
+        },
+        {
+          "q": "Diego earns $6.50 allowance each week. After saving for 4 weeks, he buys a game that costs $19.75. How much money does he have left?",
+          "choices": ["$6.25", "$6.75", "$7.25", "$13.25"],
+          "answer": 0,
+          "explain": "He saves 4 × $6.50 = $26.00, then $26.00 − $19.75 = $6.25. The answer $13.25 wrongly subtracts $19.75 from just one month-like $6.50 step ($19.75 − $6.50)."
+        }
+      ],
+      "open": [
+        {
+          "q": "Find 12.7 + 8.46 + 0.85.",
+          "answer": "22.01",
+          "solution": "Line up the decimal points and use a zero placeholder: 12.70 + 8.46 = 21.16. Then 21.16 + 0.85 = 22.01."
+        },
+        {
+          "q": "Find 9.2 − 4.56.",
+          "answer": "4.64",
+          "solution": "Write 9.2 as 9.20 so both numbers show hundredths. Subtract with regrouping: 9.20 − 4.56 = 4.64. Check by adding back: 4.64 + 4.56 = 9.20."
+        },
+        {
+          "q": "Find 0.75 × 2.4.",
+          "answer": "1.8",
+          "solution": "Multiply as whole numbers: 75 × 24 = 1,800. The factors have three decimal places in all, so place the point three places in: 1.800 = 1.8. Estimate check: 0.75 × 2.4 is about 1 × 2 = 2, and 1.8 is close."
+        },
+        {
+          "q": "Three friends split a $25.50 pizza bill equally. How much does each friend pay?",
+          "answer": "$8.50",
+          "solution": "Divide 25.50 by 3. Since 24 ÷ 3 = 8 and 1.50 ÷ 3 = 0.50, each friend pays $8.50. Check: 3 × $8.50 = $25.50."
+        },
+        {
+          "q": "Nadia runs 3.65 kilometers every day for 5 days. How far does she run in all?",
+          "answer": "18.25 kilometers",
+          "solution": "Multiply 3.65 × 5. As whole numbers, 365 × 5 = 1,825; two decimal places give 18.25 kilometers. Estimate check: about 4 × 5 = 20, and 18.25 is close."
+        }
+      ],
+      "challenge": {
+        "q": "Sam has $20.00. He buys 3 notebooks at $2.35 each and 2 pens at $1.20 each. With the money left, he buys as many $0.85 juice boxes as he can. How many juice boxes does he buy, and how much money is left at the end?",
+        "answer": "12 juice boxes; $0.35 left",
+        "solution": "Notebooks: 3 × $2.35 = $7.05. Pens: 2 × $1.20 = $2.40. Total spent so far: $7.05 + $2.40 = $9.45, leaving $20.00 − $9.45 = $10.55. Juice boxes: 12 × $0.85 = $10.20, which fits, but 13 × $0.85 = $11.05 is too much. So Sam buys 12 juice boxes and has $10.55 − $10.20 = $0.35 left."
+      }
+    }
+  ]
+}

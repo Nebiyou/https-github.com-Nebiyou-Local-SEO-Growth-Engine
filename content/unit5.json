@@ -1,0 +1,222 @@
+{
+  "unit": 5,
+  "title": "Measurement",
+  "concepts": [
+    {
+      "id": "c14",
+      "title": "Converting Measurement Units",
+      "standards": ["5.MD.A.1"],
+      "states": "Tested in every state",
+      "know": [
+        "Metric units jump by 10s, 100s, and 1,000s: 1 km = 1,000 m, 1 m = 100 cm, 1 cm = 10 mm, 1 L = 1,000 mL, and 1 kg = 1,000 g.",
+        "Customary length: 1 ft = 12 in, 1 yd = 3 ft (36 in), 1 mi = 5,280 ft. Weight: 1 lb = 16 oz, 1 ton = 2,000 lb.",
+        "Customary capacity: 1 pt = 2 cups, 1 qt = 2 pt (4 cups), 1 gal = 4 qt (16 cups).",
+        "Going from a BIG unit to a small unit, multiply. Going from a small unit to a BIG unit, divide.",
+        "In multi-step problems, convert everything to the same unit first, then add, subtract, or divide.",
+        "Time works the same way: 1 hour = 60 minutes and 1 minute = 60 seconds."
+      ],
+      "mc": [
+        {
+          "q": "A jump rope is 3 meters long. How many centimeters is that?",
+          "choices": ["30 cm", "3,000 cm", "300 cm", "0.03 cm"],
+          "answer": 2,
+          "explain": "1 m = 100 cm, so 3 × 100 = 300 cm. 30 cm uses the wrong factor of 10, and 3,000 cm would be 3 m × 1,000 (that factor is for meters to millimeters)."
+        },
+        {
+          "q": "A pet snake is 4 feet long. How many inches long is the snake?",
+          "choices": ["16 in", "40 in", "12 in", "48 in"],
+          "answer": 3,
+          "explain": "1 ft = 12 in, so 4 × 12 = 48 in. Adding 4 + 12 = 16 is a common trap — converting means multiplying, not adding. And 40 comes from multiplying by 10 instead of 12."
+        },
+        {
+          "q": "A fish tank holds 5,000 milliliters of water. How many liters is that?",
+          "choices": ["0.5 L", "5 L", "50 L", "500 L"],
+          "answer": 1,
+          "explain": "1,000 mL = 1 L. Going from a small unit to a bigger one, divide: 5,000 ÷ 1,000 = 5 L. Dividing by 100 or 10 gives the wrong answers 50 and 500."
+        },
+        {
+          "q": "A bag of flour weighs 2 kilograms. Theo's cookie recipe uses 250 grams of flour per batch. How many full batches can he make with the bag?",
+          "choices": ["8 batches", "4 batches", "80 batches", "10 batches"],
+          "answer": 0,
+          "explain": "2 kg = 2 × 1,000 = 2,000 g, and 2,000 ÷ 250 = 8 batches. Answer 4 comes from using only 1,000 g, and 10 comes from mis-dividing 2,500 ÷ 250."
+        },
+        {
+          "q": "Priya needs 3 quarts of broth for soup. Her measuring cup holds exactly 1 cup. How many cups of broth does she need?",
+          "choices": ["6 cups", "24 cups", "12 cups", "8 cups"],
+          "answer": 2,
+          "explain": "1 qt = 2 pt = 4 cups, so 3 × 4 = 12 cups. Choosing 6 means using only 2 cups per quart (that's pints, not cups), and 24 doubles the correct answer."
+        },
+        {
+          "q": "A race is 5 kilometers long. Maya has already run 3,750 meters. How many more meters does she have left?",
+          "choices": ["1,750 m", "1,250 m", "125 m", "2,250 m"],
+          "answer": 1,
+          "explain": "5 km = 5,000 m, and 5,000 − 3,750 = 1,250 m. The trap 125 comes from converting 5 km to only 500 m; 1,750 and 2,250 are subtraction slips."
+        },
+        {
+          "q": "A newborn puppy weighs 2.5 pounds. How many ounces does the puppy weigh?",
+          "choices": ["32 oz", "25 oz", "30 oz", "40 oz"],
+          "answer": 3,
+          "explain": "1 lb = 16 oz, so 2.5 × 16 = 40 oz. Choosing 32 drops the half pound (2 × 16), 30 uses 12 oz per pound (that's inches per foot!), and 25 multiplies by 10."
+        },
+        {
+          "q": "The soccer team made 3 gallons of lemonade for their fundraiser. They sell it in 1-cup servings. How many servings can they pour?",
+          "choices": ["48 servings", "12 servings", "24 servings", "96 servings"],
+          "answer": 0,
+          "explain": "1 gal = 4 qt = 8 pt = 16 cups, so 3 × 16 = 48 servings. Answer 12 counts quarts and 24 counts pints instead of finishing the conversion to cups."
+        },
+        {
+          "q": "Basketball practice starts at 3:45 p.m. and lasts 1 hour 35 minutes. What time does practice end?",
+          "choices": ["5:10 p.m.", "4:20 p.m.", "5:20 p.m.", "5:30 p.m."],
+          "answer": 2,
+          "explain": "3:45 + 1 hour = 4:45, then 4:45 + 35 minutes = 5:20 p.m. Choosing 4:20 forgets the whole hour; 5:10 and 5:30 come from miscounting the minutes past the hour."
+        },
+        {
+          "q": "Jonah has a ribbon 4 yards long. He cuts it into pieces that are each 8 inches long. How many pieces does he get?",
+          "choices": ["6 pieces", "18 pieces", "12 pieces", "16 pieces"],
+          "answer": 1,
+          "explain": "4 yd = 4 × 36 = 144 in, and 144 ÷ 8 = 18 pieces. Answer 6 treats 4 yards as only 48 inches (using 12 in per yard), and 16 uses 32 inches per yard."
+        }
+      ],
+      "open": [
+        {
+          "q": "A hiking trail is 7.2 kilometers long. How many meters is that?",
+          "answer": "7,200 m",
+          "solution": "Kilometers are bigger than meters, so multiply. 1 km = 1,000 m, so 7.2 × 1,000 = 7,200. The trail is 7,200 meters long."
+        },
+        {
+          "q": "A delivery truck can safely carry 1 ton. Each crate of dog food weighs 250 pounds. How many crates can the truck carry?",
+          "answer": "8 crates",
+          "solution": "First convert: 1 ton = 2,000 pounds. Then divide by the weight of one crate: 2,000 ÷ 250 = 8. The truck can carry 8 crates."
+        },
+        {
+          "q": "A pancake recipe calls for 2 quarts of milk. Nia only has 5 cups. How many more cups of milk does she need?",
+          "answer": "3 cups",
+          "solution": "Convert quarts to cups: 1 qt = 4 cups, so 2 qt = 8 cups. Subtract what she has: 8 − 5 = 3. Nia needs 3 more cups of milk."
+        },
+        {
+          "q": "A water jug for the soccer team holds 6 liters. Each player's bottle holds 750 milliliters. How many bottles can be filled from a full jug?",
+          "answer": "8 bottles",
+          "solution": "Convert to the same unit: 6 L = 6 × 1,000 = 6,000 mL. Then divide: 6,000 ÷ 750 = 8. The jug fills exactly 8 bottles."
+        },
+        {
+          "q": "A movie starts at 4:50 p.m. and runs for 2 hours 25 minutes. What time does it end?",
+          "answer": "7:15 p.m.",
+          "solution": "Add the hours first: 4:50 + 2 hours = 6:50. Then add the minutes: 6:50 + 10 minutes = 7:00, and 15 more minutes makes 7:15. The movie ends at 7:15 p.m."
+        }
+      ],
+      "challenge": {
+        "q": "Jade is making friendship bracelets. Each bracelet uses exactly 8 inches of string. She has three pieces of string: one is 2 yards, one is 1 foot, and one is 6 inches. How many complete bracelets can she make, and how many inches of string are left over?",
+        "answer": "11 bracelets with 2 inches left over",
+        "solution": "Convert everything to inches: 2 yd = 2 × 36 = 72 in, 1 ft = 12 in, plus 6 in. Total: 72 + 12 + 6 = 90 in. Divide by 8 in per bracelet: 90 ÷ 8 = 11 remainder 2. Jade can make 11 complete bracelets with 2 inches of string left over."
+      }
+    },
+    {
+      "id": "c15",
+      "title": "Volume",
+      "standards": ["5.MD.C.3", "5.MD.C.4", "5.MD.C.5"],
+      "states": "Tested in every state",
+      "know": [
+        "Volume measures the space inside a 3-D figure. It is counted in cubic units, like cubic centimeters (cm<sup>3</sup>) or cubic feet.",
+        "A unit cube has edges 1 unit long and a volume of exactly 1 cubic unit.",
+        "For a rectangular prism, V = length × width × height. You can multiply the three dimensions in any order.",
+        "You can also use V = B × h, where B is the area of the base and h is the height — like counting the cubes in one layer, then multiplying by the number of layers.",
+        "For a composite figure made of two prisms (like an L-shape or stacked boxes), find each prism's volume and ADD them.",
+        "Volume multiplies dimensions — adding the three side lengths is a trap, not volume!"
+      ],
+      "mc": [
+        {
+          "q": "A rectangular box is packed with unit cubes. The bottom layer has 8 cubes, and there are 3 layers in all. What is the volume of the box?",
+          "choices": ["24 cubic units", "11 cubic units", "16 cubic units", "32 cubic units"],
+          "answer": 0,
+          "explain": "Volume = cubes per layer × number of layers = 8 × 3 = 24 cubic units. Adding 8 + 3 = 11 is the trap — layers repeat, so you multiply, not add."
+        },
+        {
+          "q": "What is the volume of a rectangular prism that is 5 cm long, 2 cm wide, and 3 cm tall?",
+          "choices": ["10 cubic cm", "13 cubic cm", "62 cubic cm", "30 cubic cm"],
+          "answer": 3,
+          "explain": "V = l × w × h = 5 × 2 × 3 = 30 cubic cm. Adding the dimensions (5 + 2 + 3 = 10) is not volume, and 62 is the surface area, not the volume."
+        },
+        {
+          "q": "Which unit would you use to measure the volume of a moving box?",
+          "choices": ["square feet", "cubic feet", "feet", "pounds"],
+          "answer": 1,
+          "explain": "Volume fills 3-D space, so it needs cubic units like cubic feet. Square feet measure flat area, feet measure length, and pounds measure weight."
+        },
+        {
+          "q": "A rectangular prism has a base with an area of 24 square inches and a height of 5 inches. What is its volume?",
+          "choices": ["29 cubic in", "120 cubic in", "96 cubic in", "240 cubic in"],
+          "answer": 1,
+          "explain": "V = B × h = 24 × 5 = 120 cubic inches. Adding 24 + 5 = 29 is the classic trap; 96 and 240 come from multiplying by the wrong number."
+        },
+        {
+          "q": "A fish tank is 20 inches long, 10 inches wide, and 12 inches tall. How much water can it hold when full?",
+          "choices": ["42 cubic in", "200 cubic in", "2,400 cubic in", "240 cubic in"],
+          "answer": 2,
+          "explain": "V = 20 × 10 × 12 = 2,400 cubic inches. Answer 200 uses only length × width (that's the base area), 240 skips the width, and 42 adds the dimensions."
+        },
+        {
+          "q": "A cereal box has a volume of 72 cubic inches. It is 6 inches long and 3 inches wide. How tall is the box?",
+          "choices": ["4 in", "8 in", "24 in", "63 in"],
+          "answer": 0,
+          "explain": "The base is 6 × 3 = 18 square inches, so height = 72 ÷ 18 = 4 inches. Answer 8 divides by only one dimension pair wrong (72 ÷ 9), and 24 divides by just the 3."
+        },
+        {
+          "q": "Box A is 6 cm × 4 cm × 2 cm. Box B is 5 cm × 5 cm × 2 cm. Which box has the greater volume, and by how much?",
+          "choices": ["Box A, by 2 cubic cm", "They have equal volumes", "Box B, by 10 cubic cm", "Box B, by 2 cubic cm"],
+          "answer": 3,
+          "explain": "Box A: 6 × 4 × 2 = 48 cubic cm. Box B: 5 × 5 × 2 = 50 cubic cm. Box B wins by 50 − 48 = 2 cubic cm. Don't just compare the longest side — 6 > 5 doesn't make Box A bigger."
+        },
+        {
+          "q": "A figure is made of two stacked rectangular prisms. The bottom prism is 10 cm long, 4 cm wide, and 3 cm tall. The top prism is 4 cm long, 4 cm wide, and 2 cm tall. What is the total volume?",
+          "choices": ["120 cubic cm", "200 cubic cm", "152 cubic cm", "32 cubic cm"],
+          "answer": 2,
+          "explain": "Bottom: 10 × 4 × 3 = 120. Top: 4 × 4 × 2 = 32. Total: 120 + 32 = 152 cubic cm. Answer 200 wrongly treats the whole thing as one 10 × 4 × 5 prism; 120 forgets the top."
+        },
+        {
+          "q": "A storage cube has edges 4 feet long. How many boxes measuring 2 ft × 2 ft × 1 ft can fit inside it exactly?",
+          "choices": ["8 boxes", "32 boxes", "4 boxes", "16 boxes"],
+          "answer": 3,
+          "explain": "The cube's volume is 4 × 4 × 4 = 64 cubic ft. Each box is 2 × 2 × 1 = 4 cubic ft. So 64 ÷ 4 = 16 boxes. Answer 8 divides 64 by 8 (a box volume slip), and 4 stops after finding one box's volume."
+        },
+        {
+          "q": "A sandbox is 8 feet long and 6 feet wide, and it will be filled with sand 2 feet deep. Sand comes in bags that each fill 8 cubic feet. How many bags are needed?",
+          "choices": ["6 bags", "12 bags", "96 bags", "16 bags"],
+          "answer": 1,
+          "explain": "Volume of sand: 8 × 6 × 2 = 96 cubic ft. Bags: 96 ÷ 8 = 12. Answer 96 stops at the volume, and 6 forgets the 2-foot depth (48 ÷ 8)."
+        }
+      ],
+      "open": [
+        {
+          "q": "A jewelry box is a rectangular prism 7 cm long, 4 cm wide, and 3 cm tall. What is its volume?",
+          "answer": "84 cubic cm",
+          "solution": "Use V = l × w × h. Multiply: 7 × 4 = 28, then 28 × 3 = 84. The volume is 84 cubic centimeters."
+        },
+        {
+          "q": "A candle is shaped like a rectangular prism. Its base has an area of 9 square inches, and it is 6 inches tall. What is the volume of the candle?",
+          "answer": "54 cubic in",
+          "solution": "Use V = B × h, where B is the base area. V = 9 × 6 = 54. The candle's volume is 54 cubic inches."
+        },
+        {
+          "q": "A juice box holds 240 cubic centimeters. Its base is 8 cm long and 6 cm wide. How tall is the juice box?",
+          "answer": "5 cm",
+          "solution": "The base area is 8 × 6 = 48 square cm. Since V = B × h, the height is 240 ÷ 48 = 5. The juice box is 5 cm tall."
+        },
+        {
+          "q": "A step stool is made of two rectangular prisms. The bottom prism is 12 in long, 10 in wide, and 4 in tall. The top prism is 6 in long, 10 in wide, and 4 in tall. What is the total volume of the stool?",
+          "answer": "720 cubic in",
+          "solution": "Bottom prism: 12 × 10 × 4 = 480 cubic in. Top prism: 6 × 10 × 4 = 240 cubic in. Add them: 480 + 240 = 720 cubic inches total."
+        },
+        {
+          "q": "How many 1-centimeter unit cubes are needed to completely fill a box that is 5 cm long, 5 cm wide, and 4 cm tall?",
+          "answer": "100 cubes",
+          "solution": "Each layer holds 5 × 5 = 25 cubes, and the box fits 4 layers. So 25 × 4 = 100 unit cubes fill the box — the same as its volume, 100 cubic cm."
+        }
+      ],
+      "challenge": {
+        "q": "An aquarium shaped like a rectangular prism holds exactly 2,880 cubic inches of water when full. It is 10 inches tall, and it is twice as long as it is wide. What are the length and width of the aquarium?",
+        "answer": "24 in long and 12 in wide",
+        "solution": "Since V = B × h, the base area is 2,880 ÷ 10 = 288 square inches. The base is twice as long as it is wide, so width × (2 × width) = 288, which means width × width = 144. Since 12 × 12 = 144, the width is 12 inches and the length is 2 × 12 = 24 inches. Check: 24 × 12 × 10 = 2,880."
+      }
+    }
+  ]
+}

@@ -1,0 +1,328 @@
+{
+  "unit": 7,
+  "title": "Data & Statistics",
+  "concepts": [
+    {
+      "id": "c19",
+      "title": "Line Plots with Fractions",
+      "standards": ["5.MD.B.2"],
+      "states": "Tested in every state",
+      "know": [
+        "A line plot (dot plot) shows data on a number line: each X (or dot) stands for one measurement.",
+        "Grade 5 line plots often use fraction units like {{1/2}}, {{1/4}}, and {{1/8}}.",
+        "To find a total, multiply each value by its number of Xs, then add — remember common denominators.",
+        "The number of Xs tells you HOW MANY measurements; the number line tells you HOW BIG each one is. Don't mix them up!",
+        "To share a total equally, divide the total amount by the number of Xs (measurements)."
+      ],
+      "mc": [
+        {
+          "q": "The line plot shows the lengths of ribbons in an art box. [[table|Length (yards),Number of Xs|{{1/4}},2|{{1/2}},3|{{3/4}},4|1,1]] How many ribbons are in the art box?",
+          "choices": ["4", "10", "9", "2{{1/2}}"],
+          "answer": 1,
+          "explain": "Count every X: 2 + 3 + 4 + 1 = 10 ribbons. Choosing 4 counts the different lengths, not the ribbons, and 2{{1/2}} adds the lengths instead of counting Xs."
+        },
+        {
+          "q": "A line plot shows the weights of raisin bags at a snack stand. [[table|Weight (pounds),Number of Xs|{{1/8}},5|{{1/4}},2|{{3/8}},1]] Which weight appears most often?",
+          "choices": ["{{1/4}}", "{{3/8}}", "{{1/8}} pound", "5 pounds"],
+          "answer": 2,
+          "explain": "The most Xs (5) are above {{1/8}}, so {{1/8}} pound is the most common weight. \"5 pounds\" confuses the number of Xs with the weight on the number line."
+        },
+        {
+          "q": "The line plot shows how much water is in each bottle on a soccer bench. [[table|Water (liters),Number of Xs|{{1/4}},3|{{1/2}},7|{{3/4}},2]] How many more bottles hold {{1/2}} liter than {{1/4}} liter?",
+          "choices": ["3", "12", "7", "4"],
+          "answer": 3,
+          "explain": "Subtract the counts: 7 − 3 = 4 more bottles. Picking 7 or 3 just reads one column, and 12 is the total number of bottles."
+        },
+        {
+          "q": "A line plot shows the milk poured into glasses at breakfast. [[table|Milk (cups),Number of Xs|{{1/4}},4|{{1/2}},2|{{3/4}},2]] How much milk was poured in all?",
+          "choices": ["3{{1/2}} cups", "1{{1/2}} cups", "8 cups", "2{{1/2}} cups"],
+          "answer": 0,
+          "explain": "Multiply then add: 4 × {{1/4}} = 1, 2 × {{1/2}} = 1, 2 × {{3/4}} = 1{{1/2}}. Total: 1 + 1 + 1{{1/2}} = 3{{1/2}} cups. Adding only {{1/4}} + {{1/2}} + {{3/4}} = 1{{1/2}} forgets the counts."
+        },
+        {
+          "q": "The line plot shows the lengths of worms in a science lab. [[table|Length (inches),Number of Xs|2{{1/4}},2|2{{1/2}},3|3{{1/8}},1|3{{1/2}},2]] What is the difference between the longest and shortest worm?",
+          "choices": ["1{{1/2}} inches", "1{{1/4}} inches", "{{3/4}} inch", "5{{3/4}} inches"],
+          "answer": 1,
+          "explain": "Longest − shortest: 3{{1/2}} − 2{{1/4}} = 3{{2/4}} − 2{{1/4}} = 1{{1/4}} inches. Choosing 5{{3/4}} adds them instead of subtracting."
+        },
+        {
+          "q": "The line plot shows Deja's walks this week. [[table|Distance (miles),Number of Xs|{{1/2}},3|{{3/4}},2|1{{1/4}},1]] How far did Deja walk in all?",
+          "choices": ["2{{1/2}} miles", "6 miles", "4{{1/4}} miles", "3{{1/4}} miles"],
+          "answer": 2,
+          "explain": "3 × {{1/2}} = 1{{1/2}}, 2 × {{3/4}} = 1{{1/2}}, plus 1{{1/4}}. Total: 1{{1/2}} + 1{{1/2}} + 1{{1/4}} = 4{{1/4}} miles. Answer 2{{1/2}} adds the values once each; 6 counts the walks."
+        },
+        {
+          "q": "A line plot shows the water in 4 beakers. [[table|Water (liters),Number of Xs|{{1/4}},2|{{1/2}},1|1,1]] If all the water is poured together and shared equally among the 4 beakers, how much will each beaker hold?",
+          "choices": ["{{1/2}} liter", "2 liters", "{{1/4}} liter", "{{3/4}} liter"],
+          "answer": 0,
+          "explain": "Total: {{1/4}} + {{1/4}} + {{1/2}} + 1 = 2 liters. Share among 4 beakers: 2 ÷ 4 = {{1/2}} liter each. Answer 2 stops at the total without dividing."
+        },
+        {
+          "q": "The line plot shows bags of flour in a baking club's cabinet. [[table|Flour (pounds),Number of Xs|{{1/8}},3|{{1/4}},3|{{1/2}},2]] How much flour does the club have in all?",
+          "choices": ["1{{7/8}} pounds", "{{7/8}} pound", "2{{1/4}} pounds", "2{{1/8}} pounds"],
+          "answer": 3,
+          "explain": "3 × {{1/8}} = {{3/8}}, 3 × {{1/4}} = {{6/8}}, 2 × {{1/2}} = {{8/8}}. Total: {{17/8}} = 2{{1/8}} pounds. Choosing {{7/8}} adds each value only once, ignoring the counts."
+        },
+        {
+          "q": "A line plot shows the trail mix in 8 bags. [[table|Trail mix (pounds),Number of Xs|{{1/8}},2|{{1/4}},3|{{1/2}},2|1,1]] If all the mix is combined and split equally into the 8 bags, how much goes in each bag?",
+          "choices": ["{{3/8}} pound", "3 pounds", "{{1/2}} pound", "{{1/8}} pound"],
+          "answer": 0,
+          "explain": "Total: {{2/8}} + {{6/8}} + {{8/8}} + {{8/8}} = {{24/8}} = 3 pounds. Split into 8 bags: 3 ÷ 8 = {{3/8}} pound each. Answer 3 forgets to divide by the number of bags."
+        },
+        {
+          "q": "The line plot shows glasses of juice at a party. [[table|Juice (cups),Number of Xs|{{1/4}},5|{{1/2}},3|{{3/4}},3]] How much MORE juice is in all the {{3/4}}-cup glasses than in all the {{1/4}}-cup glasses?",
+          "choices": ["{{1/2}} cup", "1 cup", "2 cups", "3{{1/2}} cups"],
+          "answer": 1,
+          "explain": "{{3/4}}-cup glasses: 3 × {{3/4}} = 2{{1/4}}. {{1/4}}-cup glasses: 5 × {{1/4}} = 1{{1/4}}. Difference: 2{{1/4}} − 1{{1/4}} = 1 cup. Choosing {{1/2}} subtracts single values and forgets the counts."
+        }
+      ],
+      "open": [
+        {
+          "q": "The line plot shows the heights of sunflower seedlings in Ms. Ortiz's class garden. [[table|Height (inches),Number of Xs|1{{1/2}},2|1{{3/4}},3|2,1|2{{1/4}},2]] What is the total height of all the seedlings combined?",
+          "answer": "14{{3/4}} inches",
+          "solution": "Multiply each height by its Xs: 2 × 1{{1/2}} = 3, 3 × 1{{3/4}} = 5{{1/4}}, 1 × 2 = 2, 2 × 2{{1/4}} = 4{{1/2}}. Add: 3 + 5{{1/4}} + 2 + 4{{1/2}} = 14{{3/4}} inches."
+        },
+        {
+          "q": "A line plot shows the lengths of hair ribbons in Zoe's drawer. [[table|Length (yards),Number of Xs|{{3/8}},1|{{5/8}},2|{{7/8}},3]] How much longer is the longest ribbon than the shortest ribbon?",
+          "answer": "{{1/2}} yard",
+          "solution": "The longest ribbon is {{7/8}} yard and the shortest is {{3/8}} yard. Subtract: {{7/8}} − {{3/8}} = {{4/8}} = {{1/2}} yard."
+        },
+        {
+          "q": "Five friends each poured juice, shown on the line plot. [[table|Juice (cups),Number of Xs|{{1/4}},2|{{1/2}},2|1,1]] They pour it all into one pitcher and share it equally. How much juice does each friend get?",
+          "answer": "{{1/2}} cup",
+          "solution": "Total: 2 × {{1/4}} = {{1/2}}, 2 × {{1/2}} = 1, and 1 more cup, so {{1/2}} + 1 + 1 = 2{{1/2}} cups. Share among 5 friends: 2{{1/2}} ÷ 5 = {{5/2}} ÷ 5 = {{1/2}} cup each."
+        },
+        {
+          "q": "The line plot shows the weights of letters in the class mailbox. [[table|Weight (ounces),Number of Xs|{{1/8}},6|{{1/4}},2|{{1/2}},1]] How much more do all the {{1/8}}-ounce letters weigh together than all the {{1/4}}-ounce letters together?",
+          "answer": "{{1/4}} ounce",
+          "solution": "{{1/8}}-ounce letters: 6 × {{1/8}} = {{6/8}} = {{3/4}} ounce. {{1/4}}-ounce letters: 2 × {{1/4}} = {{1/2}} ounce. Difference: {{3/4}} − {{1/2}} = {{3/4}} − {{2/4}} = {{1/4}} ounce."
+        },
+        {
+          "q": "Maya measured 9 shells: {{1/2}}, {{1/4}}, {{1/2}}, {{3/4}}, {{1/4}}, {{1/2}}, {{3/4}}, {{1/2}}, {{1/4}} inch. She makes a line plot of the data. How many Xs will she draw above {{1/2}}?",
+          "answer": "4",
+          "solution": "Count how many times {{1/2}} appears in the list: it appears in positions 1, 3, 6, and 8 — that is 4 times. So the line plot gets 4 Xs above {{1/2}}. (Check: {{1/4}} gets 3 Xs and {{3/4}} gets 2 Xs, and 4 + 3 + 2 = 9 shells.)"
+        }
+      ],
+      "challenge": {
+        "q": "A line plot shows 10 bags of trail mix, but one number is smudged. [[table|Trail mix (pounds),Number of Xs|{{1/8}},2|{{1/4}},?|{{1/2}},3]] The bags weigh 3 pounds in all. How many Xs belong above {{1/4}}? And if the 3 pounds were shared equally among the 10 bags, how much would each bag hold?",
+        "answer": "5 Xs; {{3/10}} pound per bag",
+        "solution": "Known weight: 2 × {{1/8}} = {{1/4}} and 3 × {{1/2}} = 1{{1/2}}, so {{1/4}} + 1{{1/2}} = 1{{3/4}} pounds. The missing bags weigh 3 − 1{{3/4}} = 1{{1/4}} = {{5/4}} pounds. Since each is {{1/4}} pound, there are {{5/4}} ÷ {{1/4}} = 5 Xs. Check the count: 2 + 5 + 3 = 10 bags. Shared equally: 3 ÷ 10 = {{3/10}} pound per bag."
+      }
+    },
+    {
+      "id": "c20",
+      "title": "Data Displays & the Data Cycle",
+      "standards": ["TX 5.9A", "TX 5.9B", "TX 5.9C", "OK 5.D.1", "MN 5.4.1.2", "FL MA.5.DP.1.1", "VA 5.PS.1"],
+      "states": "Texas, Oklahoma, Minnesota, Florida, Virginia & more",
+      "know": [
+        "The data cycle: ask a statistical question, collect data, organize and display it, then answer the question.",
+        "Bar graphs compare categories; double-bar graphs compare two groups side by side; line graphs show change over time.",
+        "A frequency table counts how many times each value or category appears.",
+        "A stem-and-leaf plot keeps every data value: the stem is the tens digit and each leaf is a ones digit. The key tells you how to read it — for example, 3|4 = 34.",
+        "A scatterplot shows paired data (two numbers per person or thing) as points, so you can spot a relationship.",
+        "Choose the display that fits the data: categories → bar graph, change over time → line graph, paired data → scatterplot."
+      ],
+      "mc": [
+        {
+          "q": "Ms. Kim's class voted for a favorite pet. [[table|Pet,Votes|Dog,9|Cat,7|Fish,4|Hamster,2]] If the class makes a bar graph, which bar will be tallest?",
+          "choices": ["Cat", "Dog", "Fish", "Hamster"],
+          "answer": 1,
+          "explain": "The tallest bar shows the biggest number, and Dog has the most votes (9). Cat is tempting because 7 is close, but 9 > 7."
+        },
+        {
+          "q": "In a stem-and-leaf plot, the key says 3|4 = 34. What number does 5|2 stand for?",
+          "choices": ["52", "25", "5.2", "7"],
+          "answer": 0,
+          "explain": "The stem 5 is the tens digit and the leaf 2 is the ones digit, so 5|2 = 52. Reading it backward gives 25, and adding the digits gives 7 — both are wrong."
+        },
+        {
+          "q": "Tomás recorded the outdoor temperature every hour from 8 a.m. to 8 p.m. Which display best shows how the temperature changed during the day?",
+          "choices": ["Bar graph", "Frequency table", "Line graph", "Stem-and-leaf plot"],
+          "answer": 2,
+          "explain": "A line graph shows how one thing changes over time — perfect for hourly temperatures. A bar graph compares separate categories, not a trend through the day."
+        },
+        {
+          "q": "The frequency table shows books read last month. [[table|Books read,Number of students|0,3|1,6|2,5|3,4]] How many students read 2 or more books?",
+          "choices": ["5", "18", "4", "9"],
+          "answer": 3,
+          "explain": "\"2 or more\" means the rows for 2 and 3 books: 5 + 4 = 9 students. Choosing 5 counts only exactly 2 books; 18 is all the students."
+        },
+        {
+          "q": "A double-bar graph shows lunch purchases. [[table|Day,Boys,Girls|Monday,12,15|Tuesday,10,8|Wednesday,14,14]] On which day did more boys than girls buy lunch?",
+          "choices": ["Monday", "Tuesday", "Wednesday", "It never happened"],
+          "answer": 1,
+          "explain": "Compare the paired bars each day: only on Tuesday is the boys' number bigger (10 > 8). On Monday girls have more, and on Wednesday they are equal."
+        },
+        {
+          "q": "The stem-and-leaf plot shows quiz scores. Key: 6|2 = 62. [[table|Stem,Leaves|6,2 5|7,0 3 3 8|8,4 6|9,1]] How many scores are greater than 75?",
+          "choices": ["4", "5", "3", "6"],
+          "answer": 0,
+          "explain": "List the scores above 75: 78, 84, 86, 91 — that is 4 scores. Counting 73 (or both 73s) is the common slip, but 73 < 75."
+        },
+        {
+          "q": "The line graph data shows a bean plant's height. [[table|Week,Height (cm)|1,3|2,5|3,9|4,12]] Between which two weeks did the plant grow the most?",
+          "choices": ["Weeks 1 and 2", "Weeks 3 and 4", "Weeks 2 and 3", "It grew the same amount each week"],
+          "answer": 2,
+          "explain": "Find each jump: 5 − 3 = 2, 9 − 5 = 4, 12 − 9 = 3. The biggest jump, 4 cm, is between weeks 2 and 3. Weeks 3 and 4 is tempting because 12 is the tallest height, but growth means the change."
+        },
+        {
+          "q": "A scatterplot shows practice time and free throws for four players. [[table|Hours practiced,Free throws made|1,4|2,6|3,9|5,14]] What pattern does the scatterplot show?",
+          "choices": ["More practice hours go with fewer free throws", "There is no pattern in the points", "More practice hours go with more free throws", "Every player made the same number of free throws"],
+          "answer": 2,
+          "explain": "As the hours go up (1, 2, 3, 5), the free throws go up too (4, 6, 9, 14). The points rise from left to right, showing that more practice goes with more free throws."
+        },
+        {
+          "q": "The double-bar graph data shows votes for field day events. [[table|Event,Grade 5 votes,Grade 6 votes|Soccer,14,10|Basketball,9,12|Track,7,8]] How many more total votes did soccer get than track?",
+          "choices": ["9", "7", "2", "24"],
+          "answer": 0,
+          "explain": "Soccer total: 14 + 10 = 24. Track total: 7 + 8 = 15. Difference: 24 − 15 = 9. Choosing 7 compares only grade 5 votes (14 − 7), and 24 is just soccer's total."
+        },
+        {
+          "q": "Jaya asks, \"How many minutes do my classmates read each night?\" She collects 24 answers between 10 and 45 minutes. She wants a display that keeps every exact value but groups them by tens. Which should she choose?",
+          "choices": ["Bar graph", "Line graph", "Scatterplot", "Stem-and-leaf plot"],
+          "answer": 3,
+          "explain": "A stem-and-leaf plot groups data by the tens digit (the stem) while every leaf still shows an exact value. A line graph needs data over time, and a scatterplot needs two numbers per person."
+        }
+      ],
+      "open": [
+        {
+          "q": "The frequency table shows a fruit survey in Mr. Bell's class. [[table|Fruit,Frequency|Apple,8|Banana,6|Grape,5|Orange,5]] How many students were surveyed in all?",
+          "answer": "24 students",
+          "solution": "A frequency table counts every answer, so add all the frequencies: 8 + 6 + 5 + 5 = 24 students."
+        },
+        {
+          "q": "The stem-and-leaf plot shows the ages of runners in a fun run. Key: 4|1 = 41. [[table|Stem,Leaves|4,1 5 5 8|5,0 2 7|6,3]] What is the difference between the oldest and youngest runner's age?",
+          "answer": "22 years",
+          "solution": "The youngest is the first value, 4|1 = 41. The oldest is the last value, 6|3 = 63. Subtract: 63 − 41 = 22 years."
+        },
+        {
+          "q": "A line graph shows the noon temperature this week. [[table|Day,Temperature (°F)|Monday,58|Tuesday,64|Wednesday,61|Thursday,70]] Between which two days did the temperature DROP, and by how many degrees?",
+          "answer": "Tuesday to Wednesday; 3 degrees",
+          "solution": "Check each change: Monday to Tuesday rises 6 (58 to 64), Tuesday to Wednesday falls 3 (64 to 61), Wednesday to Thursday rises 9 (61 to 70). The only drop is Tuesday to Wednesday, a fall of 64 − 61 = 3 degrees."
+        },
+        {
+          "q": "The double-bar graph data shows swimming laps. [[table|Month,Ava's laps,Ben's laps|May,20,18|June,25,27]] In which month did Ava and Ben swim more laps combined, and how many more than the other month?",
+          "answer": "June; 14 more laps",
+          "solution": "May combined: 20 + 18 = 38 laps. June combined: 25 + 27 = 52 laps. June is greater, by 52 − 38 = 14 laps."
+        },
+        {
+          "q": "Mr. Ruiz wonders whether taller students also have longer arm spans. He measures each student's height AND arm span. Which data display should he use to look for a relationship, and why?",
+          "answer": "A scatterplot",
+          "solution": "Each student gives paired data — two numbers (height, arm span). A scatterplot shows each pair as one point, so if the points rise from left to right, taller students tend to have longer arm spans. Bar and line graphs cannot show two measurements per student this way."
+        }
+      ],
+      "challenge": {
+        "q": "The stem-and-leaf plot shows scores in a 30-point trivia game. Key: 1|2 = 12. [[table|Stem,Leaves|1,2 8|2,0 5 5 9|3,0 0]] A ninth player then plays and scores 27. After adding this score, what fraction of ALL the scores are 20 points or greater?",
+        "answer": "{{7/9}}",
+        "solution": "Read the original 8 scores: 12, 18, 20, 25, 25, 29, 30, 30. Scores of 20 or greater: 20, 25, 25, 29, 30, 30 — that is 6. Adding the new score of 27 makes 7 scores that are 20 or greater, out of 8 + 1 = 9 scores in all. The fraction is {{7/9}}."
+      }
+    },
+    {
+      "id": "c21",
+      "title": "Mean, Median, Mode & Range",
+      "standards": ["FL MA.5.DP.1.2", "VA 5.PS.2", "OK 5.D.1.1", "MN 5.4.1.1"],
+      "states": "Florida, Virginia, Oklahoma, Minnesota — grade 6 everywhere else, so this is a head start",
+      "know": [
+        "Mean = the \"fair share\": add all the values, then divide by how many values there are. It is the balance point of the data.",
+        "Median = the middle value AFTER you put the data in order. With an even number of values, it is halfway between the two middle values.",
+        "Mode = the value that appears most often. A data set can have one mode, more than one, or none.",
+        "Range = greatest value − least value. It measures spread, not a typical value.",
+        "One very large or very small value (an outlier) pulls the mean a lot but barely moves the median — so the median often describes a typical value better."
+      ],
+      "mc": [
+        {
+          "q": "Riley's last five spelling quizzes had these numbers of mistakes: 2, 2, 6, 8, 12. What is the mode of the data?",
+          "choices": ["2", "6", "10", "30"],
+          "answer": 0,
+          "explain": "The mode is the value that appears most often, and 2 appears twice. The middle value 6 is the median, 10 is the range, and 30 is the sum — not the mode."
+        },
+        {
+          "q": "Four pumpkins weigh 15, 9, 22, and 12 pounds. What is the range of the weights?",
+          "choices": ["22", "13", "14.5", "9"],
+          "answer": 1,
+          "explain": "Range = greatest − least = 22 − 9 = 13. Choosing 22 or 9 gives just one end of the data, and 14.5 is the mean."
+        },
+        {
+          "q": "Sam bowled three games and knocked down 8, 3, and 7 pins in the last frame of each. What is the median?",
+          "choices": ["3", "6", "7", "18"],
+          "answer": 2,
+          "explain": "Order the data first: 3, 7, 8. The middle value is 7. Choosing 3 takes the middle of the UNORDERED list — the classic mistake. 6 is the mean and 18 is the sum."
+        },
+        {
+          "q": "Four friends collected 14, 9, 12, and 13 shells at the beach. What is the mean number of shells?",
+          "choices": ["12", "12.5", "48", "13"],
+          "answer": 0,
+          "explain": "Add: 14 + 9 + 12 + 13 = 48. Divide by 4 friends: 48 ÷ 4 = 12. Choosing 48 forgets to divide, and 12.5 is the median, not the mean."
+        },
+        {
+          "q": "The numbers of points Kayla scored in four basketball games were 21, 17, 25, and 19. What is the median?",
+          "choices": ["21", "19", "20.5", "20"],
+          "answer": 3,
+          "explain": "Order the data: 17, 19, 21, 25. The two middle values are 19 and 21, so the median is (19 + 21) ÷ 2 = 20. Choosing 21 averages the middle of the unordered list; 20.5 is the mean."
+        },
+        {
+          "q": "Ella's 4 shelves hold 6, 9, 3, and 10 books. She rearranges the books so every shelf holds the same number. How many books go on each shelf?",
+          "choices": ["6", "7", "7.5", "28"],
+          "answer": 1,
+          "explain": "Equal shares means the mean: 6 + 9 + 3 + 10 = 28 books, and 28 ÷ 4 = 7 per shelf. Choosing 28 skips the dividing step; 7.5 is the median."
+        },
+        {
+          "q": "In six rounds of a card game, Marcus scored 8, 10, 8, 12, 10, 8 points. What is the mode of his scores?",
+          "choices": ["10", "9", "8", "4"],
+          "answer": 2,
+          "explain": "8 appears three times — more than any other value — so the mode is 8. 10 appears only twice, 9 is the median, and 4 is the range."
+        },
+        {
+          "q": "Liam's first three quiz scores are 7, 9, and 8, so his mean is 8. He scores 12 on the fourth quiz. What is his new mean?",
+          "choices": ["9", "8", "12", "10"],
+          "answer": 0,
+          "explain": "New total: 7 + 9 + 8 + 12 = 36. New mean: 36 ÷ 4 = 9. The mean rises because 12 is above the old mean. Choosing 10 averages only 8 and 12."
+        },
+        {
+          "q": "A data set is 4, 6, 8, 10, 12, and its median is 8. If the value 20 is added to the set, what happens to the median?",
+          "choices": ["It stays 8", "It becomes 10", "It becomes 20", "It becomes 9"],
+          "answer": 3,
+          "explain": "The new ordered set is 4, 6, 8, 10, 12, 20 — six values, so the median is the mean of the middle two: (8 + 10) ÷ 2 = 9. It moves only a little, even though 20 is far away."
+        },
+        {
+          "q": "Five kids report their weekly allowances: $4, $5, $6, $8, $52. Which measure best describes a TYPICAL allowance in this group?",
+          "choices": ["The mean, because it uses every value", "The range, because it shows how spread out the data is", "The mode, because it is the most frequent value", "The median, because the outlier of $52 pulls the mean too high"],
+          "answer": 3,
+          "explain": "The outlier $52 drags the mean up to $15, which is more than any of the other four allowances — not typical. The median, $6, matches the group. There is no mode, and range measures spread, not a typical value."
+        }
+      ],
+      "open": [
+        {
+          "q": "Jonah practiced piano 24, 18, 30, and 20 minutes on four days. What was his mean practice time?",
+          "answer": "23 minutes",
+          "solution": "Add the times: 24 + 18 + 30 + 20 = 92 minutes. Divide by the 4 days: 92 ÷ 4 = 23 minutes."
+        },
+        {
+          "q": "The numbers of tickets won at an arcade by five friends were 13, 7, 19, 11, and 5. What is the median number of tickets?",
+          "answer": "11 tickets",
+          "solution": "Order the data first: 5, 7, 11, 13, 19. With five values, the median is the third one: 11 tickets. (Never take the middle of the unordered list.)"
+        },
+        {
+          "q": "A pet shelter recorded the ages of six cats: 6, 9, 6, 12, 6, and 9 years. Find the mode AND the range of the ages.",
+          "answer": "Mode: 6 years; range: 6 years",
+          "solution": "The age 6 appears three times, more than any other, so the mode is 6. The range is greatest − least = 12 − 6 = 6 years. They are equal here, but they mean different things!"
+        },
+        {
+          "q": "Five friends have 3, 7, 4, 6, and 5 stickers. They put them in one pile and share equally. How many stickers does each friend get, and which measure of the data did you just find?",
+          "answer": "5 stickers each; the mean",
+          "solution": "Total: 3 + 7 + 4 + 6 + 5 = 25 stickers. Share among 5 friends: 25 ÷ 5 = 5 each. Sharing a total equally is exactly what the mean (fair share) measures."
+        },
+        {
+          "q": "After four games of mini-golf, Nia's mean score is 8 points. What must she score in her fifth game so that her mean for all five games is 9 points?",
+          "answer": "13 points",
+          "solution": "Four games with mean 8 means a total of 4 × 8 = 32 points so far. A mean of 9 over five games needs 5 × 9 = 45 points in all. So she must score 45 − 32 = 13 points."
+        }
+      ],
+      "challenge": {
+        "q": "Five whole numbers make a mystery data set. The mean is 11, the median is 9, the mode is 7, the range is 12, and the least number is 7. What are the five numbers?",
+        "answer": "7, 7, 9, 13, 19",
+        "solution": "Mean 11 means the sum is 5 × 11 = 55. The median (middle value) is 9. The least number is 7, and since the mode is 7 it must appear at least twice — a second 7 fits below the median. Range 12 means the greatest is 7 + 12 = 19. So far: 7, 7, 9, ?, 19, which uses 7 + 7 + 9 + 19 = 42, leaving 55 − 42 = 13 for the fourth number. Check 7, 7, 9, 13, 19: mean 11, median 9, mode 7, range 12. It works!"
+      }
+    }
+  ]
+}

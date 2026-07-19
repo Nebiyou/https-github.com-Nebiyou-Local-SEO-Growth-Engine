@@ -1,0 +1,360 @@
+{
+  "unit": 6,
+  "title": "Geometry",
+  "concepts": [
+    {
+      "id": "c16",
+      "title": "The Coordinate Plane",
+      "standards": ["5.G.A.1", "5.G.A.2"],
+      "states": "Tested in every state",
+      "know": [
+        "The coordinate plane is made of a horizontal x-axis and a vertical y-axis that cross at the origin, the point (0, 0).",
+        "An ordered pair (x, y) tells you where a point is: the first number says how far to go right from the origin, and the second says how far to go up.",
+        "Always travel x first, then y — the point (2, 6) is NOT the same as (6, 2).",
+        "To find the distance between two points on the same gridline, subtract: (2, 3) and (7, 3) are 7 − 2 = 5 units apart.",
+        "Graphs of real-world data use the axes as labels — a point like (4, 8) on a 'cups sold vs. dollars earned' graph means 4 cups sold and 8 dollars earned.",
+        "Number patterns can be graphed as points: pair up matching terms from two patterns to make ordered pairs."
+      ],
+      "mc": [
+        {
+          "q": "The point where the x-axis and the y-axis cross is called the:",
+          "choices": ["ordered pair", "quadrant", "origin", "axis"],
+          "answer": 2,
+          "explain": "The two axes meet at the origin, the point (0, 0). An ordered pair names any point, and an axis is one of the two number lines."
+        },
+        {
+          "q": "To plot the point (3, 5), you start at the origin and then:",
+          "choices": [
+            "go 3 units right, then 5 units up",
+            "go 5 units right, then 3 units up",
+            "go 3 units up, then 5 units right",
+            "go 5 units up, then 3 units left"
+          ],
+          "answer": 0,
+          "explain": "In (x, y), the first number is the move right and the second is the move up. Going 5 right and 3 up would plot (5, 3) — the coordinates flipped."
+        },
+        {
+          "q": "Which ordered pair names a point that sits ON the x-axis?",
+          "choices": ["(0, 7)", "(7, 0)", "(7, 7)", "(1, 7)"],
+          "answer": 1,
+          "explain": "A point on the x-axis has a y-coordinate of 0, like (7, 0). The pair (0, 7) is on the y-axis — an easy mix-up."
+        },
+        {
+          "q": "A point is 2 units right of the origin and 6 units up. Which ordered pair names it?",
+          "choices": ["(6, 2)", "(6, 6)", "(2, 2)", "(2, 6)"],
+          "answer": 3,
+          "explain": "Right comes first: x = 2, then up: y = 6, giving (2, 6). Choosing (6, 2) swaps the x- and y-coordinates."
+        },
+        {
+          "q": "A graph shows Nora's lemonade stand: the x-axis is cups sold and the y-axis is dollars earned. What does the point (4, 8) mean?",
+          "choices": [
+            "4 cups sold and $8 earned",
+            "8 cups sold and $4 earned",
+            "4 cups sold and $4 earned",
+            "8 cups sold and $8 earned"
+          ],
+          "answer": 0,
+          "explain": "The x-coordinate matches the x-axis label (cups) and the y-coordinate matches the y-axis label (dollars): 4 cups, $8. Answer B swaps the axes."
+        },
+        {
+          "q": "How far apart are the points (2, 3) and (7, 3)?",
+          "choices": ["9 units", "4 units", "5 units", "10 units"],
+          "answer": 2,
+          "explain": "The points share y = 3, so subtract the x-coordinates: 7 − 2 = 5 units. Adding 7 + 2 = 9 is the tempting mistake."
+        },
+        {
+          "q": "Which point is exactly 6 units above the point (5, 2)?",
+          "choices": ["(11, 2)", "(5, 8)", "(8, 5)", "(5, 6)"],
+          "answer": 1,
+          "explain": "Moving up changes only the y-coordinate: 2 + 6 = 8, so the point is (5, 8). Adding 6 to the x-coordinate gives (11, 2), which is 6 units to the right instead."
+        },
+        {
+          "q": "A pattern of points starts at (1, 2). Each new point is 1 unit right and 3 units up from the one before: (1, 2), (2, 5), (3, 8), … What is the 5th point?",
+          "choices": ["(5, 11)", "(5, 17)", "(14, 5)", "(5, 14)"],
+          "answer": 3,
+          "explain": "Keep the rule going: (4, 11), then (5, 14). The pair (5, 11) stops the y-pattern one step early, and (14, 5) swaps the coordinates."
+        },
+        {
+          "q": "Three vertices of a rectangle are (1, 2), (6, 2), and (6, 5). What is the fourth vertex?",
+          "choices": ["(1, 5)", "(5, 1)", "(2, 6)", "(1, 6)"],
+          "answer": 0,
+          "explain": "The fourth corner must line up: x = 1 (below-left corner) and y = 5 (top edge), so (1, 5). The pair (5, 1) swaps the coordinates."
+        },
+        {
+          "q": "Ravi walks along the gridlines from (3, 1) up to (3, 6), then over to (8, 6). How many units does he walk in all?",
+          "choices": ["5 units", "11 units", "10 units", "25 units"],
+          "answer": 2,
+          "explain": "First leg: 6 − 1 = 5 units up. Second leg: 8 − 3 = 5 units right. Total 5 + 5 = 10 units. Choosing 5 counts only one leg; 25 multiplies instead of adding."
+        }
+      ],
+      "open": [
+        {
+          "q": "Point P is 4 units to the right of the origin and 9 units up. Write the ordered pair for point P.",
+          "answer": "(4, 9)",
+          "solution": "The move right is the x-coordinate and the move up is the y-coordinate. Right 4 gives x = 4, up 9 gives y = 9, so P is at (4, 9)."
+        },
+        {
+          "q": "How many units apart are the points (2, 8) and (2, 3)?",
+          "answer": "5 units",
+          "solution": "Both points have x = 2, so they sit on the same vertical gridline. Subtract the y-coordinates: 8 − 3 = 5. The points are 5 units apart."
+        },
+        {
+          "q": "Tessa graphs her savings. Her points so far are (1, 3), (2, 6), and (3, 9), where x is weeks and y is dollars saved. If the pattern continues, how many dollars will she have saved after 5 weeks?",
+          "answer": "$15",
+          "solution": "Each week the savings grow by $3, so y is always 3 × x. After 5 weeks: 3 × 5 = 15. She will have saved $15, the point (5, 15)."
+        },
+        {
+          "q": "Pattern A starts at 0 and adds 2. Pattern B starts at 0 and adds 4. Pairing matching terms gives the points (0, 0), (2, 4), (4, 8). Write the next ordered pair.",
+          "answer": "(6, 12)",
+          "solution": "Pattern A: 0, 2, 4, 6 — the next x is 6. Pattern B: 0, 4, 8, 12 — the next y is 12. So the next point is (6, 12). Notice each y is double its x."
+        },
+        {
+          "q": "A square has vertices at (2, 2), (6, 2), (6, 6), and (2, 6). What is its perimeter in units?",
+          "answer": "16 units",
+          "solution": "One side runs from (2, 2) to (6, 2), a length of 6 − 2 = 4 units. A square has 4 equal sides, so the perimeter is 4 × 4 = 16 units."
+        }
+      ],
+      "challenge": {
+        "q": "A treasure map starts at camp, (1, 1). Clue 1: walk to the point 4 units right and 2 units up from camp. Clue 2: from there, double both coordinates. Clue 3: finally, move 3 units left. Where is the treasure — and what is the shortest distance back to camp walking only along gridlines?",
+        "answer": "The treasure is at (7, 6); the shortest gridline walk back is 11 units.",
+        "solution": "Clue 1: (1 + 4, 1 + 2) = (5, 3). Clue 2: double both coordinates: (10, 6). Clue 3: move 3 left: (10 − 3, 6) = (7, 6). Walking along gridlines from (7, 6) back to (1, 1) takes 7 − 1 = 6 units across plus 6 − 1 = 5 units down, and 6 + 5 = 11 units."
+      }
+    },
+    {
+      "id": "c17",
+      "title": "Classifying 2-D Figures",
+      "standards": ["5.G.B.3", "5.G.B.4", "TX 5.5A", "VA 5.MG.3"],
+      "states": "Tested in every state",
+      "know": [
+        "Shape categories form a hierarchy: whatever is true for a category is also true for every subcategory. All squares are rectangles, but not all rectangles are squares!",
+        "The quadrilateral family: a parallelogram has 2 pairs of parallel sides; a rectangle is a parallelogram with 4 right angles; a rhombus is a parallelogram with 4 equal sides; a square is both a rectangle AND a rhombus; a trapezoid has at least one pair of parallel sides.",
+        "Classify triangles by sides: scalene (no equal sides), isosceles (at least 2 equal sides), equilateral (3 equal sides).",
+        "Classify triangles by angles: acute (all angles less than 90°), right (one 90° angle), obtuse (one angle greater than 90°).",
+        "Angle types: acute is less than 90°, right is exactly 90°, obtuse is between 90° and 180°, and straight is exactly 180°.",
+        "The three angles inside any triangle add up to 180°."
+      ],
+      "mc": [
+        {
+          "q": "An angle that measures exactly 90° is called a(n):",
+          "choices": ["acute angle", "right angle", "obtuse angle", "straight angle"],
+          "answer": 1,
+          "explain": "Exactly 90° is a right angle — it makes a square corner. Acute angles are less than 90°, and obtuse angles are between 90° and 180°."
+        },
+        {
+          "q": "A triangle with all three sides the same length is called:",
+          "choices": ["scalene", "obtuse", "right", "equilateral"],
+          "answer": 3,
+          "explain": "Three equal sides means equilateral. Scalene is the opposite — no equal sides. Right and obtuse describe angles, not sides."
+        },
+        {
+          "q": "Which quadrilateral ALWAYS has 4 right angles AND 4 equal sides?",
+          "choices": ["square", "rectangle", "rhombus", "parallelogram"],
+          "answer": 0,
+          "explain": "A square needs both: right angles and equal sides. A rectangle only guarantees the right angles, and a rhombus only guarantees the equal sides."
+        },
+        {
+          "q": "Which statement is TRUE?",
+          "choices": [
+            "All rectangles are squares.",
+            "All trapezoids are parallelograms.",
+            "All squares are rectangles.",
+            "All parallelograms are rhombuses."
+          ],
+          "answer": 2,
+          "explain": "A square has 4 right angles, so it passes the rectangle test — every square is a rectangle. 'All rectangles are squares' runs the hierarchy backward: a 3-by-5 rectangle is not a square."
+        },
+        {
+          "q": "A triangle has sides of 5 cm, 5 cm, and 8 cm. Classified by its sides, it is:",
+          "choices": ["scalene", "isosceles", "equilateral", "right"],
+          "answer": 1,
+          "explain": "Two sides are equal (5 and 5), so it is isosceles. Equilateral would need all three equal, and scalene would need none equal."
+        },
+        {
+          "q": "One angle of a triangle measures 112°. Classified by its angles, the triangle must be:",
+          "choices": ["obtuse", "acute", "right", "straight"],
+          "answer": 0,
+          "explain": "Any triangle with one angle greater than 90° is obtuse. It cannot also be acute or right — a triangle only has 180° to share among its three angles."
+        },
+        {
+          "q": "A quadrilateral has two pairs of parallel sides, all four sides equal to 6 cm, and NO right angles. Its most specific name is:",
+          "choices": ["square", "rectangle", "trapezoid", "rhombus"],
+          "answer": 3,
+          "explain": "Four equal sides with no right angles is a rhombus. It cannot be a square or rectangle — those require right angles."
+        },
+        {
+          "q": "A rhombus is a quadrilateral with 4 equal sides. Kayla says every square is a rhombus. Is she right?",
+          "choices": [
+            "No, because a square has right angles.",
+            "No, because a rhombus must look slanted.",
+            "Yes, because a square has 4 equal sides.",
+            "Yes, because every quadrilateral is a rhombus."
+          ],
+          "answer": 2,
+          "explain": "The rhombus test is simply '4 equal sides,' and every square passes it. Right angles are allowed — the definition never forbids them, and a shape does not have to look slanted."
+        },
+        {
+          "q": "Two angles of a triangle measure 35° and 55°. (The angles of a triangle add up to 180°.) Classified by its angles, the triangle is:",
+          "choices": ["right", "acute", "obtuse", "equilateral"],
+          "answer": 0,
+          "explain": "The third angle is 180° − 35° − 55° = 90°, so it is a right triangle. It cannot be acute since one angle is exactly 90°, and equilateral describes sides, not angles."
+        },
+        {
+          "q": "Which statement is ALWAYS true?",
+          "choices": [
+            "A parallelogram is always a rectangle.",
+            "A rhombus with four right angles is a square.",
+            "An isosceles triangle is always equilateral.",
+            "A trapezoid always has two pairs of parallel sides."
+          ],
+          "answer": 1,
+          "explain": "A rhombus already has 4 equal sides; adding 4 right angles meets the full definition of a square. The others reverse the hierarchy — for example, a parallelogram needs right angles to be a rectangle."
+        }
+      ],
+      "open": [
+        {
+          "q": "A triangle has sides of 7 cm, 9 cm, and 12 cm. Classify it by its sides.",
+          "answer": "scalene",
+          "solution": "Compare the sides: 7, 9, and 12 are all different lengths. A triangle with no equal sides is scalene."
+        },
+        {
+          "q": "An angle measures 138°. What type of angle is it?",
+          "answer": "obtuse",
+          "solution": "138° is more than 90° but less than 180°. Angles in that range are obtuse."
+        },
+        {
+          "q": "A quadrilateral has 4 right angles. Two of its sides are 8 inches long and the other two are 3 inches long. What is its most specific name?",
+          "answer": "rectangle",
+          "solution": "Four right angles makes it a rectangle. Since the sides are not all equal (8 and 3), it is not a square, so 'rectangle' is the most specific name."
+        },
+        {
+          "q": "True or false: every rectangle is a parallelogram. Explain how you know.",
+          "answer": "True",
+          "solution": "A rectangle has two pairs of parallel sides — the top is parallel to the bottom and the left side is parallel to the right side. That is exactly the definition of a parallelogram, so every rectangle qualifies."
+        },
+        {
+          "q": "A triangle has three 60° angles. Classify it by its angles AND by its sides.",
+          "answer": "acute and equilateral",
+          "solution": "All three angles are less than 90°, so it is acute. When all three angles are equal, all three sides are equal too, so it is also equilateral."
+        }
+      ],
+      "challenge": {
+        "q": "Jade plots a quadrilateral with vertices at (1, 1), (5, 1), (5, 5), and (1, 5). List EVERY name from the quadrilateral family that fits her shape, from most general to most specific, and explain why each one fits.",
+        "answer": "quadrilateral, trapezoid, parallelogram, rectangle, rhombus, square",
+        "solution": "Each side runs 4 units along a gridline — for example (1, 1) to (5, 1) is 5 − 1 = 4 units — so all four sides are equal, and every corner is a square 90° corner. It has 4 sides (quadrilateral), at least one pair of parallel sides (trapezoid), 2 pairs of parallel sides (parallelogram), 4 right angles (rectangle), 4 equal sides (rhombus), and both right angles and equal sides (square). The hierarchy means it earns every name above 'square' at once."
+      }
+    },
+    {
+      "id": "c18",
+      "title": "3-D Figures & Nets",
+      "standards": ["FL MA.5.GR.1.2", "OK 5.GM.1"],
+      "states": "Florida & Oklahoma — a fun stretch for everyone",
+      "know": [
+        "A face is a flat surface of a solid, an edge is where two faces meet, and a vertex is a corner point where edges meet.",
+        "A prism has 2 parallel, identical bases connected by rectangles, and it is named for its base: triangular prism, rectangular prism, pentagonal prism.",
+        "A pyramid has 1 base and triangular faces that meet at a single point (the apex); it is also named for its base.",
+        "Curved solids: a cylinder has 2 circular bases, a cone has 1 circular base and an apex, and a sphere has no flat faces, edges, or vertices at all.",
+        "Memorize the big three counts: rectangular prism 6 faces, 12 edges, 8 vertices; square pyramid 5 faces, 8 edges, 5 vertices; triangular prism 5 faces, 9 edges, 6 vertices.",
+        "A net is a flat pattern that folds up into a solid — for example, six identical squares in a cross shape fold into a cube."
+      ],
+      "mc": [
+        {
+          "q": "Which solid has NO flat faces, no edges, and no vertices?",
+          "choices": ["cone", "cylinder", "cube", "sphere"],
+          "answer": 3,
+          "explain": "A sphere is perfectly round — nothing flat, no edges, no corners. A cone and a cylinder each have at least one flat circular base."
+        },
+        {
+          "q": "A cereal box is shaped like a rectangular prism. How many faces does it have?",
+          "choices": ["4", "6", "8", "12"],
+          "answer": 1,
+          "explain": "Count the flat surfaces: top and bottom, front and back, left and right — 6 faces. The numbers 8 and 12 are its vertices and edges, a common mix-up."
+        },
+        {
+          "q": "A solid with one circular base and one vertex (an apex) at the top is a:",
+          "choices": ["cylinder", "sphere", "cone", "pyramid"],
+          "answer": 2,
+          "explain": "That is a cone, like an ice-cream cone. A cylinder has 2 circular bases, and a pyramid's base is a polygon, not a circle."
+        },
+        {
+          "q": "How many edges does a rectangular prism have?",
+          "choices": ["12", "8", "6", "10"],
+          "answer": 0,
+          "explain": "Edges are where faces meet: 4 around the top, 4 around the bottom, and 4 standing up the sides — 12 in all. The number 8 counts the vertices instead."
+        },
+        {
+          "q": "A square pyramid has how many faces?",
+          "choices": ["4", "5", "6", "8"],
+          "answer": 1,
+          "explain": "One square base plus 4 triangular faces makes 5. Choosing 4 forgets the base; 8 is the number of edges."
+        },
+        {
+          "q": "Which net folds up into a cube?",
+          "choices": [
+            "four identical squares in a row",
+            "six identical squares all in one straight row",
+            "five identical squares in a plus sign",
+            "six identical squares in a cross shape"
+          ],
+          "answer": 3,
+          "explain": "A cube needs exactly 6 square faces, and the cross shape folds so each square becomes one face. Six squares in a single straight row overlap when folded, and four or five squares are not enough."
+        },
+        {
+          "q": "A net is made of 2 identical triangles and 3 rectangles. What solid does it fold into?",
+          "choices": ["triangular prism", "triangular pyramid", "square pyramid", "rectangular prism"],
+          "answer": 0,
+          "explain": "Two identical triangle bases joined by rectangles is exactly a triangular prism. A triangular pyramid would need 4 triangles and no rectangles."
+        },
+        {
+          "q": "How many vertices does a triangular prism have?",
+          "choices": ["5", "9", "6", "8"],
+          "answer": 2,
+          "explain": "Each triangular base has 3 corners, and 3 + 3 = 6 vertices. The number 5 counts its faces and 9 counts its edges — keep the three counts straight."
+        },
+        {
+          "q": "Which solid has exactly 5 faces, 8 edges, and 5 vertices?",
+          "choices": ["triangular prism", "square pyramid", "rectangular prism", "triangular pyramid"],
+          "answer": 1,
+          "explain": "A square pyramid: 1 square + 4 triangles = 5 faces, 4 base edges + 4 slanted edges = 8, and 4 base corners + 1 apex = 5 vertices. A triangular prism also has 5 faces but has 9 edges and 6 vertices."
+        },
+        {
+          "q": "A prism has pentagons (5-sided polygons) for its bases. How many faces does it have in all?",
+          "choices": ["7", "5", "10", "6"],
+          "answer": 0,
+          "explain": "Two pentagon bases plus one rectangle for each of the 5 base sides: 2 + 5 = 7 faces. Choosing 5 forgets that the bases count as faces too."
+        }
+      ],
+      "open": [
+        {
+          "q": "How many edges does a cube have?",
+          "answer": "12 edges",
+          "solution": "A cube is a rectangular prism, so count the same way: 4 edges around the top face, 4 around the bottom face, and 4 vertical edges connecting them. 4 + 4 + 4 = 12."
+        },
+        {
+          "q": "A net is made of one square and four identical triangles. What solid does it fold into?",
+          "answer": "a square pyramid",
+          "solution": "The square becomes the base, and the four triangles fold up and meet at one point (the apex). That is a square pyramid."
+        },
+        {
+          "q": "How many vertices does a triangular pyramid have?",
+          "answer": "4 vertices",
+          "solution": "Its triangular base has 3 corners, and all the triangular faces meet at 1 apex on top. 3 + 1 = 4 vertices."
+        },
+        {
+          "q": "A can of soup is shaped like which solid, and how many flat faces does it have?",
+          "answer": "a cylinder; 2 flat faces",
+          "solution": "A soup can is a cylinder. Its two circular ends (top and bottom) are its 2 flat faces; the surface wrapping around the side is curved, so it is not a face."
+        },
+        {
+          "q": "A tent is shaped like a triangular prism. How many faces, edges, and vertices does it have?",
+          "answer": "5 faces, 9 edges, 6 vertices",
+          "solution": "Faces: 2 triangle ends + 3 rectangles = 5. Edges: 3 on each triangle end (6) plus 3 connecting them = 9. Vertices: 3 corners on each end, 3 + 3 = 6."
+        }
+      ],
+      "challenge": {
+        "q": "Leo builds a pentagonal prism (its bases are 5-sided polygons). First find its number of faces, vertices, and edges. Then test Euler's secret rule for solids: faces + vertices − edges should equal 2. Does Leo's prism pass the test?",
+        "answer": "7 faces, 10 vertices, 15 edges; yes — 7 + 10 − 15 = 2",
+        "solution": "Faces: 2 pentagon bases + 5 rectangles = 7. Vertices: 5 corners on each base, 5 + 5 = 10. Edges: 5 around the top base + 5 around the bottom base + 5 vertical edges joining them = 15. Check the rule: 7 + 10 − 15 = 2, so the prism passes. (Try it on a cube: 6 + 8 − 12 = 2. It works for every prism and pyramid!)"
+      }
+    }
+  ]
+}
