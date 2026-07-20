@@ -43,6 +43,8 @@ console.log(`ok: 8 units, ${ids.length} concepts, ` +
 
 let html = readFileSync(join(root, "app", "template.html"), "utf8");
 const anims = readFileSync(join(root, "app", "anims.js"), "utf8");
+const fonts = readFileSync(join(root, "app", "fonts-embed.css"), "utf8");
+html = html.replace("/*__FONTS__*/", fonts);
 // </script> inside JSON strings would terminate the script tag — escape defensively
 const contentJs = "const CONTENT = " + JSON.stringify(units).replace(/<\//g, "<\\/") + ";";
 html = html.replace("/*__CONTENT__*/", contentJs).replace("/*__ANIMS__*/", anims);

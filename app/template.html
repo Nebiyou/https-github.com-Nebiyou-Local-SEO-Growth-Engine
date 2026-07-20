@@ -5,69 +5,76 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Grade 5 Math Mastery — Every State, One Page</title>
 <style>
+/*__FONTS__*/
+/* ---- 60-30-10 palette ----
+   60% base: light warm neutral (page + panels)
+   30% dominant: calm blue (headers, nav, buttons, structure)
+   10% accent: coral + sunny yellow (attention: challenges, progress, calls to action) */
 :root{
-  --bg:#f6f8fc; --panel:#ffffff; --ink:#1c2333; --muted:#5b6478;
-  --brand:#4f46e5; --brand2:#0ea5e9; --good:#16a34a; --bad:#dc2626;
-  --warn:#d97706; --chip:#eef2ff; --line:#e5e9f2; --gold:#f59e0b;
-  --radius:14px; --shadow:0 2px 10px rgba(28,35,51,.07);
+  --bg:#faf6ec; --panel:#fffdf7; --ink:#25303c; --muted:#68737f;
+  --brand:#2b6cb0; --brand2:#3d9db3; --good:#2e9e5b; --bad:#d64545;
+  --accent:#ff6f61; --chip:#e6eef7; --line:#e9e2d2; --gold:#f4b000;
+  --radius:14px; --shadow:0 2px 10px rgba(43,63,84,.08);
 }
 [data-theme="dark"]{
-  --bg:#0f1420; --panel:#1a2130; --ink:#e8ecf6; --muted:#9aa5bd;
-  --chip:#252e44; --line:#2b3550; --shadow:0 2px 10px rgba(0,0,0,.35);
+  --bg:#141a22; --panel:#1d2530; --ink:#ecf0f4; --muted:#9daab6;
+  --brand:#5b9bd5; --brand2:#57b8c9; --accent:#ff8a7a;
+  --chip:#27313f; --line:#303c4b; --shadow:0 2px 10px rgba(0,0,0,.35);
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;font-family:'Segoe UI',system-ui,-apple-system,Verdana,sans-serif;background:var(--bg);color:var(--ink);font-size:16px;line-height:1.55}
+body{margin:0;font-family:'Sassoon Primary','Sassoon Primary Std','ABeeZee','Andika','Comic Sans MS',system-ui,sans-serif;background:var(--bg);color:var(--ink);font-size:18px;line-height:1.6}
+h1,h2,h3,h4,.unithead,.cid,.statechip,.abtn,.scorepill{font-family:'Andika','Sassoon Primary','ABeeZee',system-ui,sans-serif}
 a{color:var(--brand)}
 .layout{display:flex;min-height:100vh}
 /* ---------- sidebar ---------- */
 nav{width:290px;flex-shrink:0;background:var(--panel);border-right:1px solid var(--line);padding:14px;position:sticky;top:0;height:100vh;overflow-y:auto}
-nav h1{font-size:19px;margin:6px 4px 2px;background:linear-gradient(90deg,var(--brand),var(--brand2));-webkit-background-clip:text;background-clip:text;color:transparent}
-nav .sub{font-size:12px;color:var(--muted);margin:0 4px 10px}
+nav h1{font-size:22px;margin:6px 4px 2px;background:linear-gradient(90deg,var(--brand),var(--brand2));-webkit-background-clip:text;background-clip:text;color:transparent}
+nav .sub{font-size:14px;color:var(--muted);margin:0 4px 10px}
 .unitblock{margin-bottom:6px}
-.unithead{font-weight:700;font-size:13.5px;padding:7px 8px;border-radius:8px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;user-select:none}
+.unithead{font-weight:700;font-size:16px;padding:7px 8px;border-radius:8px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;user-select:none}
 .unithead:hover{background:var(--chip)}
-.unithead .count{font-size:11px;color:var(--muted);font-weight:400}
-.navlink{display:flex;align-items:center;gap:7px;padding:6px 8px 6px 16px;border-radius:8px;font-size:13.5px;color:var(--ink);text-decoration:none;cursor:pointer}
+.unithead .count{font-size:12.5px;color:var(--muted);font-weight:400}
+.navlink{display:flex;align-items:center;gap:7px;padding:7px 8px 7px 16px;border-radius:8px;font-size:16px;color:var(--ink);text-decoration:none;cursor:pointer}
 .navlink:hover{background:var(--chip)}
 .navlink.active{background:var(--chip);font-weight:600}
 .navlink .tick{width:17px;height:17px;border-radius:50%;border:2px solid var(--line);flex-shrink:0;display:inline-flex;align-items:center;justify-content:center;font-size:11px;color:#fff}
 .navlink .tick.done{background:var(--good);border-color:var(--good)}
 .navlink .tick.part{border-color:var(--gold)}
 .navtools{margin:10px 0;padding:10px 8px;border:1px solid var(--line);border-radius:10px}
-.navtools label{font-size:12px;color:var(--muted);display:block;margin-bottom:4px}
+.navtools label{font-size:13.5px;color:var(--muted);display:block;margin-bottom:4px}
 select,button{font-family:inherit}
-#stateSel{width:100%;padding:7px;border-radius:8px;border:1px solid var(--line);background:var(--panel);color:var(--ink);font-size:13.5px}
-.tbtn{background:var(--chip);color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:6px 10px;font-size:12.5px;cursor:pointer;margin-top:8px;width:100%}
+#stateSel{width:100%;padding:8px;border-radius:8px;border:1px solid var(--line);background:var(--panel);color:var(--ink);font-size:15.5px}
+.tbtn{background:var(--chip);color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:7px 10px;font-size:14.5px;cursor:pointer;margin-top:8px;width:100%}
 .tbtn:hover{filter:brightness(.96)}
 /* ---------- main ---------- */
 main{flex:1;min-width:0;padding:26px clamp(14px,4vw,54px) 90px}
 .hero{background:linear-gradient(120deg,var(--brand),var(--brand2));border-radius:var(--radius);color:#fff;padding:26px 28px;margin-bottom:26px;box-shadow:var(--shadow)}
-.hero h2{margin:0 0 6px;font-size:26px}
+.hero h2{margin:0 0 6px;font-size:32px}
 .hero p{margin:4px 0;opacity:.95;max-width:70ch}
-.statechip{display:inline-block;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.4);padding:3px 12px;border-radius:999px;font-size:13px;margin-top:8px}
+.statechip{display:inline-block;background:var(--accent);border:1px solid rgba(255,255,255,.55);padding:5px 16px;border-radius:999px;font-size:15.5px;font-weight:700;margin-top:8px}
 section.concept{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);margin-bottom:34px;padding:24px 26px;scroll-margin-top:12px}
 .chead{display:flex;flex-wrap:wrap;align-items:baseline;gap:10px;border-bottom:2px solid var(--line);padding-bottom:10px;margin-bottom:14px}
-.chead h3{margin:0;font-size:21px}
-.cid{background:linear-gradient(120deg,var(--brand),var(--brand2));color:#fff;border-radius:9px;font-weight:800;font-size:13px;padding:4px 10px}
-.badge{font-size:11.5px;padding:3px 9px;border-radius:999px;background:var(--chip);color:var(--muted)}
+.chead h3{margin:0;font-size:26px}
+.cid{background:linear-gradient(120deg,var(--brand),var(--brand2));color:#fff;border-radius:9px;font-weight:800;font-size:15px;padding:4px 10px}
+.badge{font-size:13.5px;padding:4px 11px;border-radius:999px;background:var(--chip);color:var(--muted)}
 .badge.core{background:#dcfce7;color:#166534}
 .badge.stretch{background:#fef3c7;color:#92400e}
 [data-theme="dark"] .badge.core{background:#14331f;color:#6ee7a0}
 [data-theme="dark"] .badge.stretch{background:#3a2c10;color:#fcd34d}
-h4.part{font-size:15px;margin:22px 0 10px;display:flex;align-items:center;gap:8px}
-h4.part .ico{width:26px;height:26px;border-radius:8px;display:inline-flex;align-items:center;justify-content:center;background:var(--chip);font-size:14px}
+h4.part{font-size:19.5px;margin:22px 0 10px;display:flex;align-items:center;gap:8px}
+h4.part .ico{width:30px;height:30px;border-radius:8px;display:inline-flex;align-items:center;justify-content:center;background:var(--chip);font-size:16px}
 ul.know{margin:0;padding-left:22px}
 ul.know li{margin:5px 0}
 /* ---------- animation ---------- */
 .animbox{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--bg)}
 .animbox svg{display:block;width:100%;height:auto;max-height:390px}
-.animcap{padding:10px 14px;font-size:14.5px;min-height:44px;border-top:1px solid var(--line);background:var(--panel)}
+.animcap{padding:12px 16px;font-size:17px;min-height:50px;border-top:1px solid var(--line);background:var(--panel)}
 .animctl{display:flex;gap:8px;padding:0 12px 12px;background:var(--panel);align-items:center}
-.abtn{border:1px solid var(--line);background:var(--chip);color:var(--ink);border-radius:8px;padding:6px 14px;cursor:pointer;font-size:13.5px}
+.abtn{border:1px solid var(--line);background:var(--chip);color:var(--ink);border-radius:8px;padding:7px 16px;cursor:pointer;font-size:15.5px}
 .abtn:hover{filter:brightness(.95)}
 .abtn.primary{background:var(--brand);border-color:var(--brand);color:#fff}
-.stepdots{margin-left:auto;font-size:12.5px;color:var(--muted)}
+.stepdots{margin-left:auto;font-size:14px;color:var(--muted)}
 @keyframes pop{0%{opacity:0;transform:scale(.4)}70%{transform:scale(1.12)}100%{opacity:1;transform:scale(1)}}
 @keyframes slidein{from{opacity:0;transform:translateY(-14px)}to{opacity:1;transform:none}}
 @keyframes drawline{from{stroke-dashoffset:400}to{stroke-dashoffset:0}}
@@ -79,40 +86,40 @@ svg text{font-family:inherit}
 /* ---------- quiz ---------- */
 .q{border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin:10px 0;background:var(--bg)}
 .q .qt{font-weight:600;margin-bottom:10px}
-.qnum{color:var(--brand);font-weight:800;margin-right:6px}
+.qnum{color:var(--accent);font-weight:800;margin-right:6px}
 .choices{display:grid;gap:8px}
-.choice{display:flex;gap:10px;align-items:flex-start;border:1.5px solid var(--line);background:var(--panel);border-radius:10px;padding:9px 12px;cursor:pointer;font-size:15px;text-align:left;color:var(--ink);width:100%}
+.choice{display:flex;gap:10px;align-items:flex-start;border:1.5px solid var(--line);background:var(--panel);border-radius:10px;padding:10px 14px;cursor:pointer;font-size:17.5px;text-align:left;color:var(--ink);width:100%}
 .choice:hover{border-color:var(--brand)}
 .choice .letter{font-weight:800;color:var(--brand)}
 .choice.correct{border-color:var(--good);background:rgba(22,163,74,.09)}
 .choice.wrong{border-color:var(--bad);background:rgba(220,38,38,.08)}
 .choice:disabled{cursor:default;opacity:.92}
-.explain{margin-top:10px;font-size:14px;border-left:3px solid var(--good);padding:6px 12px;background:rgba(22,163,74,.07);border-radius:0 8px 8px 0;display:none}
+.explain{margin-top:10px;font-size:16px;border-left:3px solid var(--good);padding:6px 12px;background:rgba(22,163,74,.07);border-radius:0 8px 8px 0;display:none}
 .explain.bad{border-color:var(--bad);background:rgba(220,38,38,.06)}
-.reveal{margin-top:10px;display:none;font-size:14.5px;border-left:3px solid var(--brand2);padding:8px 12px;background:rgba(14,165,233,.07);border-radius:0 8px 8px 0}
+.reveal{margin-top:10px;display:none;font-size:16.5px;border-left:3px solid var(--brand2);padding:8px 12px;background:rgba(14,165,233,.07);border-radius:0 8px 8px 0}
 .reveal .ans{font-weight:700}
-.rbtn{margin-top:10px;border:1px solid var(--brand2);color:var(--brand2);background:transparent;border-radius:8px;padding:5px 12px;font-size:13px;cursor:pointer}
+.rbtn{margin-top:10px;border:1px solid var(--brand2);color:var(--brand2);background:transparent;border-radius:8px;padding:6px 14px;font-size:15px;cursor:pointer}
 .rbtn:hover{background:rgba(14,165,233,.08)}
-.scorebar{display:flex;align-items:center;gap:12px;margin-top:10px;font-size:14px}
-.scorepill{background:var(--chip);border-radius:999px;padding:4px 14px;font-weight:700}
-.challenge{border:2px dashed var(--gold);border-radius:12px;padding:16px 18px;background:rgba(245,158,11,.06)}
+.scorebar{display:flex;align-items:center;gap:12px;margin-top:10px;font-size:16.5px}
+.scorepill{background:var(--chip);border:1.5px solid var(--accent);border-radius:999px;padding:5px 16px;font-weight:700}
+.challenge{border:3px dashed var(--gold);border-radius:12px;padding:16px 18px;background:rgba(245,158,11,.06)}
 .challenge .qt{font-weight:600}
 .frac{display:inline-flex;flex-direction:column;align-items:center;vertical-align:middle;margin:0 2px;line-height:1.05;font-size:.92em}
 .frac>span:first-child{border-bottom:1.5px solid currentColor;padding:0 4px}
 .frac>span:last-child{padding:0 4px}
-table.qtab{border-collapse:collapse;margin:8px 0;font-size:14px}
-table.qtab th,table.qtab td{border:1px solid var(--line);padding:4px 12px;text-align:center}
+table.qtab{border-collapse:collapse;margin:8px 0;font-size:16px}
+table.qtab th,table.qtab td{border:1px solid var(--line);padding:5px 14px;text-align:center}
 table.qtab th{background:var(--chip)}
 /* ---------- answer key ---------- */
 #answerkey{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:24px 26px;box-shadow:var(--shadow)}
 #answerkey h3{margin-top:0}
 .akconcept{margin:18px 0;border-top:1px solid var(--line);padding-top:12px}
 .akconcept h4{margin:0 0 8px}
-.akrow{font-size:14px;margin:4px 0}
+.akrow{font-size:16px;margin:4px 0}
 .akrow details{display:inline}
-.akrow summary{cursor:pointer;color:var(--brand2);display:inline;font-size:13px}
-.akmc span{display:inline-block;background:var(--chip);border-radius:7px;padding:2px 9px;margin:2px 4px 2px 0;font-size:13.5px}
-.topbtn{position:fixed;right:22px;bottom:22px;background:var(--brand);color:#fff;border:none;border-radius:999px;width:46px;height:46px;font-size:20px;cursor:pointer;box-shadow:var(--shadow)}
+.akrow summary{cursor:pointer;color:var(--brand2);display:inline;font-size:15px}
+.akmc span{display:inline-block;background:var(--chip);border-radius:7px;padding:3px 10px;margin:2px 4px 2px 0;font-size:15.5px}
+.topbtn{position:fixed;right:22px;bottom:22px;background:var(--accent);color:#fff;border:none;border-radius:999px;width:46px;height:46px;font-size:20px;cursor:pointer;box-shadow:var(--shadow)}
 mark.hl{background:rgba(245,158,11,.35);border-radius:4px;padding:0 3px;color:inherit}
 @media (max-width:900px){
   .layout{flex-direction:column}
@@ -132,7 +139,7 @@ mark.hl{background:rgba(245,158,11,.35);border-radius:4px;padding:0 3px;color:in
   <div class="hero">
     <h2>Grade 5 Math Mastery 🚀</h2>
     <p>Every concept tested on <b>any</b> US state's 5th-grade math test — all 50 states + DC — with animated lessons, 368 practice questions, and full answer keys.</p>
-    <p style="font-size:13.5px">8 units · 23 concepts · 230 multiple choice · 115 open-ended · 23 challenge problems</p>
+    <p style="font-size:16px">8 units · 23 concepts · 230 multiple choice · 115 open-ended · 23 challenge problems</p>
     <span class="statechip" id="stateInfo">Pick your state in the sidebar to see what's on <i>your</i> test.</span>
   </div>
   <div id="concepts"></div>

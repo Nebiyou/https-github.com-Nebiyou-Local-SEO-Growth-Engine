@@ -66,7 +66,7 @@ function shadeHex(hex,f){
   const c = v=>Math.max(0,Math.min(255,Math.round(v*f)));
   return "#"+[c(n>>16),c((n>>8)&255),c(n&255)].map(v=>v.toString(16).padStart(2,"0")).join("");
 }
-const IND="#4f46e5", SKY="#0ea5e9", GRN="#16a34a", RED="#dc2626", AMB="#f59e0b", GRY="#94a3b8";
+const IND="#2b6cb0", SKY="#3d9db3", GRN="#2e9e5b", RED="#d64545", AMB="#f4b000", GRY="#94a3b8";
 
 // ---- shared scene builders ----
 function pvChart(s){
